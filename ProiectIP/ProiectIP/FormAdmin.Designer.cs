@@ -77,6 +77,7 @@
             this.textBoxAnswer4.Size = new System.Drawing.Size(605, 29);
             this.textBoxAnswer4.TabIndex = 7;
             this.textBoxAnswer4.Text = "Write your answer here.....";
+            this.textBoxAnswer4.Enter += new System.EventHandler(this.textBoxAnswer4_Enter);
             // 
             // textBoxAnswer3
             // 
@@ -87,6 +88,7 @@
             this.textBoxAnswer3.Size = new System.Drawing.Size(605, 29);
             this.textBoxAnswer3.TabIndex = 6;
             this.textBoxAnswer3.Text = "Write your answer here.....";
+            this.textBoxAnswer3.Enter += new System.EventHandler(this.textBoxAnswer3_Enter);
             // 
             // textBoxAnswer2
             // 
@@ -97,6 +99,7 @@
             this.textBoxAnswer2.Size = new System.Drawing.Size(605, 29);
             this.textBoxAnswer2.TabIndex = 5;
             this.textBoxAnswer2.Text = "Write your answer here.....";
+            this.textBoxAnswer2.Enter += new System.EventHandler(this.textBoxAnswer2_Enter);
             // 
             // textBoxAnswer1
             // 
@@ -107,7 +110,7 @@
             this.textBoxAnswer1.Size = new System.Drawing.Size(605, 29);
             this.textBoxAnswer1.TabIndex = 4;
             this.textBoxAnswer1.Text = "Write your answer here.....";
-            this.textBoxAnswer1.TextChanged += new System.EventHandler(this.textBoxAnswer1_TextChanged);
+            this.textBoxAnswer1.Enter += new System.EventHandler(this.textBoxAnswer1_Enter);
             // 
             // radioButtonAnswer4
             // 
@@ -155,6 +158,7 @@
             this.buttonDisconectAdmin.TabIndex = 2;
             this.buttonDisconectAdmin.Text = "Disconect";
             this.buttonDisconectAdmin.UseVisualStyleBackColor = true;
+            this.buttonDisconectAdmin.Click += new System.EventHandler(this.buttonDisconectAdmin_Click);
             // 
             // buttonAdd
             // 
@@ -164,6 +168,7 @@
             this.buttonAdd.TabIndex = 3;
             this.buttonAdd.Text = "Add";
             this.buttonAdd.UseVisualStyleBackColor = true;
+            this.buttonAdd.Click += new System.EventHandler(this.buttonAdd_Click);
             // 
             // FormAdmin
             // 
@@ -176,6 +181,7 @@
             this.Controls.Add(this.richTextBoxQuestionAdmin);
             this.Name = "FormAdmin";
             this.Text = "FormAdmin";
+            this.Load += new System.EventHandler(this.FormAdmin_Load);
             this.groupBoxAnswers.ResumeLayout(false);
             this.groupBoxAnswers.PerformLayout();
             this.ResumeLayout(false);

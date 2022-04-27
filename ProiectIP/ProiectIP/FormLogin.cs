@@ -21,7 +21,7 @@ namespace ProiectIP
 
         private void buttonRegister_Click(object sender, EventArgs e)
         {
-            formAdmin = new FormAdmin();
+            formAdmin = new FormAdmin(this);
             formAdmin.Show();
             this.Hide();
         }
