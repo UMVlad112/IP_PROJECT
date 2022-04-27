@@ -1,0 +1,13 @@
+C:\Users\Ungur\OneDrive\Desktop\prjIP\ProiectIP\ProiectIP\bin\Debug\ProiectIP.exe.config
+C:\Users\Ungur\OneDrive\Desktop\prjIP\ProiectIP\ProiectIP\bin\Debug\ProiectIP.exe
+C:\Users\Ungur\OneDrive\Desktop\prjIP\ProiectIP\ProiectIP\bin\Debug\ProiectIP.pdb
+C:\Users\Ungur\OneDrive\Desktop\prjIP\ProiectIP\ProiectIP\obj\Debug\ProiectIP.csproj.AssemblyReference.cache
+C:\Users\Ungur\OneDrive\Desktop\prjIP\ProiectIP\ProiectIP\obj\Debug\ProiectIP.csproj.SuggestedBindingRedirects.cache
+C:\Users\Ungur\OneDrive\Desktop\prjIP\ProiectIP\ProiectIP\obj\Debug\ProiectIP.Properties.Resources.resources
+C:\Users\Ungur\OneDrive\Desktop\prjIP\ProiectIP\ProiectIP\obj\Debug\ProiectIP.csproj.GenerateResource.cache
+C:\Users\Ungur\OneDrive\Desktop\prjIP\ProiectIP\ProiectIP\obj\Debug\ProiectIP.csproj.CoreCompileInputs.cache
+C:\Users\Ungur\OneDrive\Desktop\prjIP\ProiectIP\ProiectIP\obj\Debug\ProiectIP.exe
+C:\Users\Ungur\OneDrive\Desktop\prjIP\ProiectIP\ProiectIP\obj\Debug\ProiectIP.pdb
+C:\Users\Ungur\OneDrive\Desktop\prjIP\ProiectIP\ProiectIP\obj\Debug\ProiectIP.FormChestionar.resources
+C:\Users\Ungur\OneDrive\Desktop\prjIP\ProiectIP\ProiectIP\obj\Debug\ProiectIP.FormLogin.resources
+C:\Users\Ungur\OneDrive\Desktop\prjIP\ProiectIP\ProiectIP\obj\Debug\ProiectIP.FormAdmin.resources
