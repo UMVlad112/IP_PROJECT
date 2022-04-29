@@ -37,3 +37,4 @@ D:\FACULTATE-AN3-SEM2\ProiectIP\IP_PROJECT\ProiectIP\ProiectIP\obj\Debug\Proiect
 D:\FACULTATE-AN3-SEM2\ProiectIP\IP_PROJECT\ProiectIP\ProiectIP\obj\Debug\ProiectIP.exe
 D:\FACULTATE-AN3-SEM2\ProiectIP\IP_PROJECT\ProiectIP\ProiectIP\obj\Debug\ProiectIP.pdb
 D:\FACULTATE-AN3-SEM2\ProiectIP\IP_PROJECT\ProiectIP\ProiectIP\obj\Debug\ProiectIP.FormRegisterAdmin.resources
+C:\Users\Ungur\OneDrive\Desktop\prjIP\IP_PROJECT\ProiectIP\ProiectIP\obj\Debug\ProiectIP.FormRegisterAdmin.resources

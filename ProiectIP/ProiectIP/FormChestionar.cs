@@ -118,11 +118,15 @@ namespace ProiectIP
                 _random = r.Next(0, _intrebari.Count);
                 AfiseazaIntrebare(_intrebari[_random]);
                 _raspunsSelectat = -1;
+                labelNumber.Text=(_numarIntrebareCurenta+1).ToString()+"/10";
+
             }
             catch(Exception err)
             {
                 MessageBox.Show(err.Message);
             }
         }
+
+       
     }
 }

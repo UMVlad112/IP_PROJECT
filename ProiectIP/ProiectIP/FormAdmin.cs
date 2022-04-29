@@ -110,10 +110,7 @@ namespace ProiectIP
            
         }
 
-        private void FormAdmin_Load(object sender, EventArgs e)
-        {
-           
-        }
+        
 
         private void buttonDisconectAdmin_Click(object sender, EventArgs e)
         {
@@ -130,5 +127,7 @@ namespace ProiectIP
             Form RegisterNewAdmin = new FormRegisterAdmin();
             RegisterNewAdmin.ShowDialog();
         }
+
+       
     }
 }
