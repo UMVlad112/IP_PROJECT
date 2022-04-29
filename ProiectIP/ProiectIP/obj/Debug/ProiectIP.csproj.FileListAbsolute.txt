@@ -24,3 +24,16 @@ C:\Users\Ungur\OneDrive\Desktop\prjIP\IP_PROJECT\ProiectIP\ProiectIP\obj\Debug\P
 C:\Users\Ungur\OneDrive\Desktop\prjIP\IP_PROJECT\ProiectIP\ProiectIP\bin\Debug\ProiectIP.exe.config
 C:\Users\Ungur\OneDrive\Desktop\prjIP\IP_PROJECT\ProiectIP\ProiectIP\bin\Debug\ProiectIP.exe
 C:\Users\Ungur\OneDrive\Desktop\prjIP\IP_PROJECT\ProiectIP\ProiectIP\bin\Debug\ProiectIP.pdb
+D:\FACULTATE-AN3-SEM2\ProiectIP\IP_PROJECT\ProiectIP\ProiectIP\bin\Debug\ProiectIP.exe.config
+D:\FACULTATE-AN3-SEM2\ProiectIP\IP_PROJECT\ProiectIP\ProiectIP\bin\Debug\ProiectIP.exe
+D:\FACULTATE-AN3-SEM2\ProiectIP\IP_PROJECT\ProiectIP\ProiectIP\bin\Debug\ProiectIP.pdb
+D:\FACULTATE-AN3-SEM2\ProiectIP\IP_PROJECT\ProiectIP\ProiectIP\obj\Debug\ProiectIP.csproj.AssemblyReference.cache
+D:\FACULTATE-AN3-SEM2\ProiectIP\IP_PROJECT\ProiectIP\ProiectIP\obj\Debug\ProiectIP.FormAdmin.resources
+D:\FACULTATE-AN3-SEM2\ProiectIP\IP_PROJECT\ProiectIP\ProiectIP\obj\Debug\ProiectIP.FormChestionar.resources
+D:\FACULTATE-AN3-SEM2\ProiectIP\IP_PROJECT\ProiectIP\ProiectIP\obj\Debug\ProiectIP.FormLogin.resources
+D:\FACULTATE-AN3-SEM2\ProiectIP\IP_PROJECT\ProiectIP\ProiectIP\obj\Debug\ProiectIP.Properties.Resources.resources
+D:\FACULTATE-AN3-SEM2\ProiectIP\IP_PROJECT\ProiectIP\ProiectIP\obj\Debug\ProiectIP.csproj.GenerateResource.cache
+D:\FACULTATE-AN3-SEM2\ProiectIP\IP_PROJECT\ProiectIP\ProiectIP\obj\Debug\ProiectIP.csproj.CoreCompileInputs.cache
+D:\FACULTATE-AN3-SEM2\ProiectIP\IP_PROJECT\ProiectIP\ProiectIP\obj\Debug\ProiectIP.exe
+D:\FACULTATE-AN3-SEM2\ProiectIP\IP_PROJECT\ProiectIP\ProiectIP\obj\Debug\ProiectIP.pdb
+D:\FACULTATE-AN3-SEM2\ProiectIP\IP_PROJECT\ProiectIP\ProiectIP\obj\Debug\ProiectIP.FormRegisterAdmin.resources

@@ -46,6 +46,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Cryptography.cs" />
+    <Compile Include="InregistrareIntrebareException.cs" />
     <Compile Include="FormAdmin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -58,14 +60,26 @@
     <Compile Include="FormChestionar.Designer.cs">
       <DependentUpon>FormChestionar.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormFactory.cs" />
     <Compile Include="FormLogin.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormLogin.Designer.cs">
       <DependentUpon>FormLogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormRegisterAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRegisterAdmin.Designer.cs">
+      <DependentUpon>FormRegisterAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Intrebari.cs" />
+    <Compile Include="LoginException.cs" />
+    <Compile Include="Parser.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="User.cs" />
+    <Compile Include="RegisterException.cs" />
     <EmbeddedResource Include="FormAdmin.resx">
       <DependentUpon>FormAdmin.cs</DependentUpon>
     </EmbeddedResource>
@@ -74,6 +88,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormLogin.resx">
       <DependentUpon>FormLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRegisterAdmin.resx">
+      <DependentUpon>FormRegisterAdmin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

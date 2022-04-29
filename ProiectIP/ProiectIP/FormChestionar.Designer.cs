@@ -46,9 +46,10 @@
             // buttonA
             // 
             this.buttonA.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.buttonA.Location = new System.Drawing.Point(57, 410);
+            this.buttonA.Location = new System.Drawing.Point(76, 505);
+            this.buttonA.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttonA.Name = "buttonA";
-            this.buttonA.Size = new System.Drawing.Size(204, 72);
+            this.buttonA.Size = new System.Drawing.Size(272, 89);
             this.buttonA.TabIndex = 0;
             this.buttonA.Text = "A";
             this.buttonA.UseVisualStyleBackColor = true;
@@ -57,9 +58,10 @@
             // buttonB
             // 
             this.buttonB.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.buttonB.Location = new System.Drawing.Point(279, 410);
+            this.buttonB.Location = new System.Drawing.Point(372, 505);
+            this.buttonB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttonB.Name = "buttonB";
-            this.buttonB.Size = new System.Drawing.Size(204, 72);
+            this.buttonB.Size = new System.Drawing.Size(272, 89);
             this.buttonB.TabIndex = 1;
             this.buttonB.Text = "B";
             this.buttonB.UseVisualStyleBackColor = true;
@@ -68,37 +70,44 @@
             // buttonC
             // 
             this.buttonC.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.buttonC.Location = new System.Drawing.Point(501, 410);
+            this.buttonC.Location = new System.Drawing.Point(668, 505);
+            this.buttonC.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttonC.Name = "buttonC";
-            this.buttonC.Size = new System.Drawing.Size(204, 72);
+            this.buttonC.Size = new System.Drawing.Size(272, 89);
             this.buttonC.TabIndex = 2;
             this.buttonC.Text = "C";
             this.buttonC.UseVisualStyleBackColor = true;
+            this.buttonC.Click += new System.EventHandler(this.buttonC_Click);
             // 
             // buttonD
             // 
             this.buttonD.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.buttonD.Location = new System.Drawing.Point(723, 410);
+            this.buttonD.Location = new System.Drawing.Point(964, 505);
+            this.buttonD.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttonD.Name = "buttonD";
-            this.buttonD.Size = new System.Drawing.Size(204, 72);
+            this.buttonD.Size = new System.Drawing.Size(272, 89);
             this.buttonD.TabIndex = 3;
             this.buttonD.Text = "D";
             this.buttonD.UseVisualStyleBackColor = true;
+            this.buttonD.Click += new System.EventHandler(this.buttonD_Click);
             // 
             // buttonNext
             // 
             this.buttonNext.Image = ((System.Drawing.Image)(resources.GetObject("buttonNext.Image")));
-            this.buttonNext.Location = new System.Drawing.Point(804, 545);
+            this.buttonNext.Location = new System.Drawing.Point(1072, 671);
+            this.buttonNext.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttonNext.Name = "buttonNext";
-            this.buttonNext.Size = new System.Drawing.Size(144, 58);
+            this.buttonNext.Size = new System.Drawing.Size(192, 71);
             this.buttonNext.TabIndex = 4;
             this.buttonNext.UseVisualStyleBackColor = true;
+            this.buttonNext.Click += new System.EventHandler(this.buttonNext_Click);
             // 
             // richTextBoxQuestionUser
             // 
-            this.richTextBoxQuestionUser.Location = new System.Drawing.Point(57, 78);
+            this.richTextBoxQuestionUser.Location = new System.Drawing.Point(76, 96);
+            this.richTextBoxQuestionUser.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.richTextBoxQuestionUser.Name = "richTextBoxQuestionUser";
-            this.richTextBoxQuestionUser.Size = new System.Drawing.Size(870, 274);
+            this.richTextBoxQuestionUser.Size = new System.Drawing.Size(1159, 336);
             this.richTextBoxQuestionUser.TabIndex = 5;
             this.richTextBoxQuestionUser.Text = "";
             // 
@@ -106,9 +115,10 @@
             // 
             this.labelNumber.AutoSize = true;
             this.labelNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.labelNumber.Location = new System.Drawing.Point(482, 563);
+            this.labelNumber.Location = new System.Drawing.Point(643, 693);
+            this.labelNumber.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelNumber.Name = "labelNumber";
-            this.labelNumber.Size = new System.Drawing.Size(40, 20);
+            this.labelNumber.Size = new System.Drawing.Size(51, 25);
             this.labelNumber.TabIndex = 6;
             this.labelNumber.Text = "1/10";
             // 
@@ -117,18 +127,20 @@
             this.labelTimer.AutoSize = true;
             this.labelTimer.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
             this.labelTimer.ForeColor = System.Drawing.Color.DarkGreen;
-            this.labelTimer.Location = new System.Drawing.Point(951, 9);
+            this.labelTimer.Location = new System.Drawing.Point(1268, 11);
+            this.labelTimer.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelTimer.Name = "labelTimer";
-            this.labelTimer.Size = new System.Drawing.Size(36, 26);
+            this.labelTimer.Size = new System.Drawing.Size(44, 31);
             this.labelTimer.TabIndex = 7;
             this.labelTimer.Text = "30";
             // 
             // buttonDisconectUser
             // 
             this.buttonDisconectUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.buttonDisconectUser.Location = new System.Drawing.Point(663, 545);
+            this.buttonDisconectUser.Location = new System.Drawing.Point(884, 671);
+            this.buttonDisconectUser.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttonDisconectUser.Name = "buttonDisconectUser";
-            this.buttonDisconectUser.Size = new System.Drawing.Size(135, 58);
+            this.buttonDisconectUser.Size = new System.Drawing.Size(180, 71);
             this.buttonDisconectUser.TabIndex = 8;
             this.buttonDisconectUser.Text = "Disconnect";
             this.buttonDisconectUser.UseVisualStyleBackColor = true;
@@ -138,17 +150,18 @@
             // 
             this.labelUser.AutoSize = true;
             this.labelUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.labelUser.Location = new System.Drawing.Point(12, 9);
+            this.labelUser.Location = new System.Drawing.Point(16, 11);
+            this.labelUser.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelUser.Name = "labelUser";
-            this.labelUser.Size = new System.Drawing.Size(64, 26);
+            this.labelUser.Size = new System.Drawing.Size(80, 31);
             this.labelUser.TabIndex = 11;
             this.labelUser.Text = "User:";
             // 
             // FormChestionar
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(999, 634);
+            this.ClientSize = new System.Drawing.Size(1332, 780);
             this.Controls.Add(this.labelUser);
             this.Controls.Add(this.buttonDisconectUser);
             this.Controls.Add(this.labelTimer);
@@ -159,8 +172,10 @@
             this.Controls.Add(this.buttonC);
             this.Controls.Add(this.buttonB);
             this.Controls.Add(this.buttonA);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "FormChestionar";
             this.Text = "FormChestionar";
+            this.Load += new System.EventHandler(this.FormChestionar_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

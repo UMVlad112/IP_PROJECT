@@ -41,9 +41,10 @@
             // buttonRegister
             // 
             this.buttonRegister.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.buttonRegister.Location = new System.Drawing.Point(251, 152);
+            this.buttonRegister.Location = new System.Drawing.Point(335, 187);
+            this.buttonRegister.Margin = new System.Windows.Forms.Padding(4);
             this.buttonRegister.Name = "buttonRegister";
-            this.buttonRegister.Size = new System.Drawing.Size(111, 40);
+            this.buttonRegister.Size = new System.Drawing.Size(148, 49);
             this.buttonRegister.TabIndex = 0;
             this.buttonRegister.Text = "Register";
             this.buttonRegister.UseVisualStyleBackColor = true;
@@ -52,13 +53,15 @@
             // buttonLogin
             // 
             this.buttonLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.buttonLogin.Location = new System.Drawing.Point(53, 152);
+            this.buttonLogin.Location = new System.Drawing.Point(71, 187);
+            this.buttonLogin.Margin = new System.Windows.Forms.Padding(4);
             this.buttonLogin.Name = "buttonLogin";
             this.buttonLogin.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.buttonLogin.Size = new System.Drawing.Size(116, 40);
+            this.buttonLogin.Size = new System.Drawing.Size(155, 49);
             this.buttonLogin.TabIndex = 1;
             this.buttonLogin.Text = "Login";
             this.buttonLogin.UseVisualStyleBackColor = true;
+            this.buttonLogin.Click += new System.EventHandler(this.buttonLogin_Click);
             // 
             // groupBoxLogin
             // 
@@ -68,36 +71,41 @@
             this.groupBoxLogin.Controls.Add(this.labelUserName);
             this.groupBoxLogin.Controls.Add(this.buttonLogin);
             this.groupBoxLogin.Controls.Add(this.buttonRegister);
-            this.groupBoxLogin.Location = new System.Drawing.Point(79, 60);
+            this.groupBoxLogin.Location = new System.Drawing.Point(105, 74);
+            this.groupBoxLogin.Margin = new System.Windows.Forms.Padding(4);
             this.groupBoxLogin.Name = "groupBoxLogin";
-            this.groupBoxLogin.Size = new System.Drawing.Size(416, 234);
+            this.groupBoxLogin.Padding = new System.Windows.Forms.Padding(4);
+            this.groupBoxLogin.Size = new System.Drawing.Size(555, 288);
             this.groupBoxLogin.TabIndex = 2;
             this.groupBoxLogin.TabStop = false;
             // 
             // textBoxPassword
             // 
             this.textBoxPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.textBoxPassword.Location = new System.Drawing.Point(177, 89);
+            this.textBoxPassword.Location = new System.Drawing.Point(236, 110);
+            this.textBoxPassword.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxPassword.Name = "textBoxPassword";
             this.textBoxPassword.PasswordChar = '*';
-            this.textBoxPassword.Size = new System.Drawing.Size(185, 23);
+            this.textBoxPassword.Size = new System.Drawing.Size(245, 26);
             this.textBoxPassword.TabIndex = 5;
             // 
             // textBoxUserName
             // 
             this.textBoxUserName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.textBoxUserName.Location = new System.Drawing.Point(177, 51);
+            this.textBoxUserName.Location = new System.Drawing.Point(236, 63);
+            this.textBoxUserName.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxUserName.Name = "textBoxUserName";
-            this.textBoxUserName.Size = new System.Drawing.Size(185, 23);
+            this.textBoxUserName.Size = new System.Drawing.Size(245, 26);
             this.textBoxUserName.TabIndex = 4;
             // 
             // labelPassword
             // 
             this.labelPassword.AutoSize = true;
             this.labelPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
-            this.labelPassword.Location = new System.Drawing.Point(50, 89);
+            this.labelPassword.Location = new System.Drawing.Point(67, 110);
+            this.labelPassword.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelPassword.Name = "labelPassword";
-            this.labelPassword.Size = new System.Drawing.Size(75, 18);
+            this.labelPassword.Size = new System.Drawing.Size(92, 24);
             this.labelPassword.TabIndex = 3;
             this.labelPassword.Text = "Password";
             // 
@@ -105,25 +113,28 @@
             // 
             this.labelUserName.AutoSize = true;
             this.labelUserName.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
-            this.labelUserName.Location = new System.Drawing.Point(50, 54);
+            this.labelUserName.Location = new System.Drawing.Point(67, 66);
+            this.labelUserName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelUserName.Name = "labelUserName";
-            this.labelUserName.Size = new System.Drawing.Size(44, 18);
+            this.labelUserName.Size = new System.Drawing.Size(54, 24);
             this.labelUserName.TabIndex = 2;
             this.labelUserName.Text = "User ";
             // 
             // FormLogin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(588, 369);
+            this.ClientSize = new System.Drawing.Size(784, 454);
             this.Controls.Add(this.groupBoxLogin);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FormLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
             this.Load += new System.EventHandler(this.FormLogin_Load);
+            this.EnabledChanged += new System.EventHandler(this.FormLogin_EnabledChanged);
             this.groupBoxLogin.ResumeLayout(false);
             this.groupBoxLogin.PerformLayout();
             this.ResumeLayout(false);

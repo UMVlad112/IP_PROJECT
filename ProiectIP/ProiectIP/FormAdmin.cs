@@ -14,13 +14,17 @@ namespace ProiectIP
     {
         private List<TextBox> _textBoxes;
         private List<RadioButton> _radioButtons  ;
-        private Form formLogin;
+        private Form _formLogin;
+        private User _user;
 
-        public FormAdmin( Form mainForm)
+        public FormAdmin( Form mainForm,User user)
         {
             InitializeComponent();
-            formLogin = mainForm;
-           
+            _user = user;
+            if (_formLogin == null)
+            {
+                _formLogin = mainForm;
+            }
             
         }
 
@@ -61,7 +65,48 @@ namespace ProiectIP
 
         private void buttonAdd_Click(object sender, EventArgs e)
         {
-            
+            string Intrebare = richTextBoxQuestionAdmin.Text;
+            string raspuns1 = textBoxAnswer1.Text;
+            string raspuns2 = textBoxAnswer2.Text;
+            string raspuns3 = textBoxAnswer3.Text;
+            string raspuns4 = textBoxAnswer4.Text;
+            int indexRaspunsCorect=0;
+            try
+            {
+                if (Intrebare == "" || raspuns1 == "" || raspuns2 == "" || raspuns3 == "" || raspuns4 == "")
+                {
+                    throw new InregistrareIntrebareException("Va rugam completati toate campurile!");
+                }
+                int i = 0;
+                foreach(RadioButton button in groupBoxAnswers.Controls.OfType<RadioButton>())
+                {
+                    if(button.Checked==true)
+                    {
+                        i = 3 - i;  //primul radio button are valoarea 3;
+                        indexRaspunsCorect = i;
+                        break;
+                    }
+                    i++;
+                    
+                }
+                Parser.WriteIntrebareToFile("intrebari.txt",new Intrebare(Intrebare, raspuns1, raspuns2, raspuns3, raspuns4, indexRaspunsCorect));
+                MessageBox.Show("Intrebarea a fost adaugata cu succes!");
+                
+            }
+            catch(InregistrareIntrebareException err)
+            {
+                MessageBox.Show(err.GetMessage);
+            }
+            finally
+            {
+                richTextBoxQuestionAdmin.Clear();
+                foreach (TextBox button in groupBoxAnswers.Controls.OfType<TextBox>())
+                {
+                    button.Clear();
+                }
+                radioButtonAnswer1.Checked = true;
+            }
+
            
         }
 
@@ -72,8 +117,18 @@ namespace ProiectIP
 
         private void buttonDisconectAdmin_Click(object sender, EventArgs e)
         {
+
+            _formLogin.Enabled = false;
+            _formLogin.Enabled = true;
             this.Close();
-            formLogin.Show();
+            _formLogin.Show();
+           
+        }
+
+        private void buttonRegisterAdmin_Click(object sender, EventArgs e)
+        {
+            Form RegisterNewAdmin = new FormRegisterAdmin();
+            RegisterNewAdmin.ShowDialog();
         }
     }
 }
