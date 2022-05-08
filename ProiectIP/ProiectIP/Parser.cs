@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
 namespace ProiectIP
@@ -62,6 +63,88 @@ namespace ProiectIP
                 w.WriteLine(line);
             }
         }
+
+        public static string WriteAndGetHistory(string file,User user, int punctaj)
+        {
+            string istoric = "";
+            StreamReader sr = new StreamReader(file);
+            string line;
+            while ((line = sr.ReadLine()) != null)
+            {
+                string[] toks = line.Split('\t');
+                if (toks[0] == user.GetUsername)
+                {
+                    istoric = toks[1];
+                    break;
+                }
+                
+
+            }
+            sr.Close();
+            string toInsert = "";
+            Console.WriteLine(istoric);
+            if (istoric == "")
+            {
+                using (StreamWriter w = File.AppendText(file))
+                {
+                    toInsert = returnScore(punctaj);
+                    w.WriteLine(user.GetUsername + "\t"+toInsert);
+                }
+            }
+            else
+            {
+                File.WriteAllLines(file, File
+                .ReadLines(file)
+                .Where(myLine => !myLine.StartsWith(user.GetUsername))
+                .ToArray());
+
+                toInsert = returnScore(istoric, punctaj);
+                using (StreamWriter w = File.AppendText(file))
+                {
+                    w.WriteLine(user.GetUsername + "\t" + toInsert);
+                }
+            }
+            return toInsert;
+
+        }
+
+        private static string returnScore(int punctaj)
+        {
+            string toInsert = "";
+            for (int i = 0; i < 10; i++)
+            {
+                if (i == punctaj)
+                {
+                    toInsert += "1,";
+                }
+                else
+                {
+                    toInsert += "0,";
+                }
+            }
+            if (10 == punctaj)
+            {
+                toInsert += "1";
+            }
+            else
+            {
+                toInsert += "0";
+            }
+            return toInsert;
+        }
+        private static string returnScore(string istoric, int punctaj)
+        {
+            string toInsert = "";
+            string[] punctaje = istoric.Split(',');
+            punctaje[punctaj] = (int.Parse(punctaje[punctaj]) + 1).ToString();
+            for (int i = 0; i < 10; i++)
+            {
+                toInsert += punctaje[i] + ",";
+            }
+            toInsert += punctaje[10];
+            return toInsert;
+        }
     }
+    
 
 }

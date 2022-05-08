@@ -204,8 +204,10 @@
             this.Controls.Add(this.buttonDisconectAdmin);
             this.Controls.Add(this.groupBoxAnswers);
             this.Controls.Add(this.richTextBoxQuestionAdmin);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormAdmin";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormAdmin";
             this.groupBoxAnswers.ResumeLayout(false);
             this.groupBoxAnswers.PerformLayout();

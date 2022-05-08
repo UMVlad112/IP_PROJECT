@@ -116,16 +116,22 @@
             this.labelNumber.TabIndex = 6;
             this.labelNumber.Text = "1/10";
             // 
+            // timer1
+            // 
+            this.timer1.Enabled = true;
+            this.timer1.Interval = 1000;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
             // labelTimer
             // 
             this.labelTimer.AutoSize = true;
             this.labelTimer.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
             this.labelTimer.ForeColor = System.Drawing.Color.DarkGreen;
-            this.labelTimer.Location = new System.Drawing.Point(951, 9);
+            this.labelTimer.Location = new System.Drawing.Point(939, 9);
             this.labelTimer.Name = "labelTimer";
-            this.labelTimer.Size = new System.Drawing.Size(36, 26);
+            this.labelTimer.Size = new System.Drawing.Size(54, 26);
             this.labelTimer.TabIndex = 7;
-            this.labelTimer.Text = "30";
+            this.labelTimer.Text = "5:00";
             // 
             // buttonDisconectUser
             // 
@@ -164,8 +170,10 @@
             this.Controls.Add(this.buttonC);
             this.Controls.Add(this.buttonB);
             this.Controls.Add(this.buttonA);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormChestionar";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormChestionar";
             this.Load += new System.EventHandler(this.FormChestionar_Load);
             this.ResumeLayout(false);

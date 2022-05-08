@@ -19,6 +19,7 @@ namespace ProiectIP
         private int _random;
         private int _punctaj = 0;
         private int _numarIntrebareCurenta = 0;
+        private int _timeLeft = 300;
         public FormChestionar(Form mainForm,User user)
         {
             InitializeComponent();
@@ -68,21 +69,29 @@ namespace ProiectIP
 
         private void FormChestionar_Load(object sender, EventArgs e)
         {
+            showTimer(_timeLeft);
+            labelUser.Text = "Good luck : " + _user.GetUsername;
             _intrebari=Parser.GetIntrebari("intrebari.txt");
             Random r = new Random();
             _random = r.Next(0, this._intrebari.Count);
             AfiseazaIntrebare(_intrebari[_random]);
-            //_intrebari.RemoveAt(_random);
+            
         }
 
         private void AfiseazaIntrebare(Intrebare intrebare)
         {
+            richTextBoxQuestionUser.Clear();
             List<string> raspunsuri = intrebare.GetRaspunsuri;
-            richTextBoxQuestionUser.Text = intrebare.GetIntrebare+"\n";
-            richTextBoxQuestionUser.Text += "A." + raspunsuri[0] + "\n";
-            richTextBoxQuestionUser.Text += "B." + raspunsuri[1] + "\n";
-            richTextBoxQuestionUser.Text += "C." + raspunsuri[2] + "\n";
-            richTextBoxQuestionUser.Text += "D." + raspunsuri[3] + "\n";
+            richTextBoxQuestionUser.SelectionFont = new Font("Arial", 22, FontStyle.Bold);
+            richTextBoxQuestionUser.AppendText(intrebare.GetIntrebare + "\n");
+            richTextBoxQuestionUser.SelectionFont = new Font("Arial", 15, FontStyle.Regular);
+            richTextBoxQuestionUser.AppendText("A. " + raspunsuri[0]+"\n");
+            richTextBoxQuestionUser.SelectionFont = new Font("Arial", 15, FontStyle.Regular);
+            richTextBoxQuestionUser.AppendText("B. " + raspunsuri[1] + "\n");
+            richTextBoxQuestionUser.SelectionFont = new Font("Arial", 15, FontStyle.Regular);
+            richTextBoxQuestionUser.AppendText("C. " + raspunsuri[2] + "\n");
+            richTextBoxQuestionUser.SelectionFont = new Font("Arial", 15, FontStyle.Regular);
+            richTextBoxQuestionUser.AppendText("D. " + raspunsuri[3] + "\n");
 
         }
 
@@ -104,13 +113,9 @@ namespace ProiectIP
                 }
                 if(_raspunsSelectat==_intrebari[_random].GetIndexRaspunsCorect)
                 {
-                    MessageBox.Show("RaspunsCorect");
                     _punctaj += 1;
                 }
-                else
-                {
-                    MessageBox.Show("RaspunsGresit");
-                }
+                
                 ResetColor();
                 _numarIntrebareCurenta += 1;
                 _intrebari.RemoveAt(_random);
@@ -119,7 +124,12 @@ namespace ProiectIP
                 AfiseazaIntrebare(_intrebari[_random]);
                 _raspunsSelectat = -1;
                 labelNumber.Text=(_numarIntrebareCurenta+1).ToString()+"/10";
-
+                if (_numarIntrebareCurenta > 9)
+                {
+                    Form formRezultat = new FormRezultat(_formLogin, _user, _punctaj);
+                    formRezultat.Show();
+                    this.Close();
+                }
             }
             catch(Exception err)
             {
@@ -127,6 +137,31 @@ namespace ProiectIP
             }
         }
 
-       
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            _timeLeft--;
+            showTimer(_timeLeft);
+            if (_timeLeft == -1)
+            {
+                Form formRezultat = new FormRezultat(_formLogin, _user, _punctaj);
+                formRezultat.Show();
+                this.Close();
+            }
+        }
+        
+        private void showTimer(int timeLeft)
+        {
+            int minute = timeLeft / 60;
+            int secunde = timeLeft - minute * 60;
+            if (secunde < 10)
+            {
+                labelTimer.Text = minute + ":" + "0"+ secunde ;
+            }
+           
+            else
+            {
+                labelTimer.Text = minute + ":" + secunde;
+            }
+        }
     }
 }

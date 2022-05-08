@@ -38,3 +38,17 @@ D:\FACULTATE-AN3-SEM2\ProiectIP\IP_PROJECT\ProiectIP\ProiectIP\obj\Debug\Proiect
 D:\FACULTATE-AN3-SEM2\ProiectIP\IP_PROJECT\ProiectIP\ProiectIP\obj\Debug\ProiectIP.pdb
 D:\FACULTATE-AN3-SEM2\ProiectIP\IP_PROJECT\ProiectIP\ProiectIP\obj\Debug\ProiectIP.FormRegisterAdmin.resources
 C:\Users\Ungur\OneDrive\Desktop\prjIP\IP_PROJECT\ProiectIP\ProiectIP\obj\Debug\ProiectIP.FormRegisterAdmin.resources
+C:\Users\MikeOxlong\Desktop\IP PROIECT\IP_PROJECT\ProiectIP\ProiectIP\bin\Debug\ProiectIP.exe.config
+C:\Users\MikeOxlong\Desktop\IP PROIECT\IP_PROJECT\ProiectIP\ProiectIP\bin\Debug\ProiectIP.exe
+C:\Users\MikeOxlong\Desktop\IP PROIECT\IP_PROJECT\ProiectIP\ProiectIP\bin\Debug\ProiectIP.pdb
+C:\Users\MikeOxlong\Desktop\IP PROIECT\IP_PROJECT\ProiectIP\ProiectIP\obj\Debug\ProiectIP.csproj.AssemblyReference.cache
+C:\Users\MikeOxlong\Desktop\IP PROIECT\IP_PROJECT\ProiectIP\ProiectIP\obj\Debug\ProiectIP.FormAdmin.resources
+C:\Users\MikeOxlong\Desktop\IP PROIECT\IP_PROJECT\ProiectIP\ProiectIP\obj\Debug\ProiectIP.FormChestionar.resources
+C:\Users\MikeOxlong\Desktop\IP PROIECT\IP_PROJECT\ProiectIP\ProiectIP\obj\Debug\ProiectIP.FormLogin.resources
+C:\Users\MikeOxlong\Desktop\IP PROIECT\IP_PROJECT\ProiectIP\ProiectIP\obj\Debug\ProiectIP.FormRegisterAdmin.resources
+C:\Users\MikeOxlong\Desktop\IP PROIECT\IP_PROJECT\ProiectIP\ProiectIP\obj\Debug\ProiectIP.Properties.Resources.resources
+C:\Users\MikeOxlong\Desktop\IP PROIECT\IP_PROJECT\ProiectIP\ProiectIP\obj\Debug\ProiectIP.csproj.GenerateResource.cache
+C:\Users\MikeOxlong\Desktop\IP PROIECT\IP_PROJECT\ProiectIP\ProiectIP\obj\Debug\ProiectIP.csproj.CoreCompileInputs.cache
+C:\Users\MikeOxlong\Desktop\IP PROIECT\IP_PROJECT\ProiectIP\ProiectIP\obj\Debug\ProiectIP.exe
+C:\Users\MikeOxlong\Desktop\IP PROIECT\IP_PROJECT\ProiectIP\ProiectIP\obj\Debug\ProiectIP.pdb
+C:\Users\MikeOxlong\Desktop\IP PROIECT\IP_PROJECT\ProiectIP\ProiectIP\obj\Debug\ProiectIP.FormRezultat.resources
