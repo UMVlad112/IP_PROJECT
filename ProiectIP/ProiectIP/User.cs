@@ -6,12 +6,20 @@ using System.Threading.Tasks;
 
 namespace ProiectIP
 {
+    /// <summary>
+    /// Clasa care stocheaza informatiile unui utilizator 
+    /// </summary>
     public class User
     {
+ 
+        
         private string _username;
         private string _hashPassword;
         private bool _isAdmin;
         
+        /// <summary>
+        /// Getter pentru parametrul username al unui utilizator 
+        /// </summary>
         public string GetUsername
         {
             get
@@ -20,6 +28,9 @@ namespace ProiectIP
             }
         }
 
+        /// <summary>
+        /// Getter pentru parola hashuita a unui utilizator 
+        /// </summary>
         public string GetHashPassword
         {
             get
@@ -27,6 +38,9 @@ namespace ProiectIP
                 return this._hashPassword;
             }
         }
+        /// <summary>
+        /// Getter pentru a verifica daca utilizatorul este sau nu admin
+        /// </summary>
         public bool GetIsAdmin
         {
             get
@@ -34,7 +48,15 @@ namespace ProiectIP
                 return this._isAdmin;
             }
         }
-
+        /// <summary>
+        /// Constructor 
+        /// </summary>
+        /// <param name="username"></param>
+        /// usernameul introdus
+        /// <param name="hashPassword"></param>
+        /// hash-ul parolei introduse
+        /// <param name="isAdmin"></param>
+        /// nivelul de acces al utilizatorului
         public User(string username,string hashPassword,bool isAdmin)
         {
             this._username = username;

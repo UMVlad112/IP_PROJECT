@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace ProiectIP
 {
+    /// <summary>
+    /// Clasa de exceptie utilizata la inregistrarea unui nou utilizator
+    /// </summary>
     class RegisterException:Exception
     {
         private string _message;
