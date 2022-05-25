@@ -10,11 +10,26 @@ using System.Windows.Forms;
 
 namespace ProiectIP
 {
+    /// <summary>
+    /// Form-ul care se deschide atunci cand user-ul termina cele 10 intrebari, sau timpul alocat chestionarului expira.
+    /// </summary>
     public partial class FormRezultat : Form
     {
         private Form _formLogin;
         private User _user;
         private int _punctaj;
+        /// <summary>
+        /// Constructor pentru Form-ul care se ocupa de afisarea rezultatului.
+        /// </summary>
+        /// <param name="mainForm">
+        /// O referinta la form-ul de log-in pentru a ne putea intoarce la el in caz ca user-ul doreste sa dea log-out.
+        /// </param>
+        /// <param name="user">
+        /// Obiect de tip user care contine informatiile persoanei care tocmai a terminat testul.
+        /// </param>
+        /// <param name="punctaj">
+        /// Scorul obtinut la chestionarul completat anterior.
+        /// </param>
         public FormRezultat(Form mainForm, User user,int punctaj)
         {
             InitializeComponent();
@@ -26,7 +41,11 @@ namespace ProiectIP
             }
 
         }
-
+        /// <summary>
+        /// Metoda de onLoad. Afiseaza istoricul persoanei, in caz ca acesta exista, si scorul curent.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void FormRezultat_Load(object sender, EventArgs e)
         {
             string history=Parser.WriteAndGetHistory("history.txt", _user, _punctaj);
@@ -51,12 +70,22 @@ namespace ProiectIP
             }
         }
 
+        /// <summary>
+        /// Metoda de onClick care se apeleaza atunci cand utilizatorul doreste sa se intoarca la meniul de log-in.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void buttonDisconnect_Click(object sender, EventArgs e)
         {
             this.Close();
             _formLogin.Show();
         }
 
+        /// <summary>
+        /// Metoda de onClick care se apeleaza atunci cand utilizatorul doreste sa inceapa un nou chestionar.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void buttonRedo_Click(object sender, EventArgs e)
         {
             Form formChestionar = new FormChestionar(_formLogin, _user);

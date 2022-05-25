@@ -52,11 +52,11 @@ namespace ProiectIP
         /// Constructor 
         /// </summary>
         /// <param name="username"></param>
-        /// usernameul introdus
+        /// Usernameul introdus
         /// <param name="hashPassword"></param>
-        /// hash-ul parolei introduse
+        /// Hash-ul parolei introduse
         /// <param name="isAdmin"></param>
-        /// nivelul de acces al utilizatorului
+        /// Nivelul de acces al utilizatorului
         public User(string username,string hashPassword,bool isAdmin)
         {
             this._username = username;

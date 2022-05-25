@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace ProiectIP
 {
-    class LoginException:Exception
+    /// <summary>
+    /// Clasa de exceptie utilizata la log-in. Se verifica daca username-ul si parola sunt completate si daca numele de utilizator este unic.
+    /// </summary>
+    class LoginException :Exception
     {
         private string _message;
         public LoginException(string message) : base(message)

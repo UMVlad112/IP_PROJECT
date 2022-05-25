@@ -10,6 +10,9 @@ using System.Windows.Forms;
 
 namespace ProiectIP
 {
+    /// <summary>
+    /// Form-ul care se deschide atunci cand un utilizator de tip admin doreste sa creeze un nou cont cu privilegii de admin.
+    /// </summary>
     public partial class FormRegisterAdmin : Form
     {
         public FormRegisterAdmin()
@@ -17,6 +20,11 @@ namespace ProiectIP
             InitializeComponent();
         }
 
+        /// <summary>
+        /// Metoda de onClick care se apeleaza atunci cand admin-ul adauga un nou user cu drepturi privilegiate.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void buttonAddAdmin_Click(object sender, EventArgs e)
         {
             try

@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 namespace ProiectIP
 {
     /// <summary>
-    /// Clasa de exceptie utilizata la inregistrarea unui nou utilizator
+    /// Clasa de exceptie utilizata la inregistrarea unui nou utilizator. Se verifica daca username-ul si parola sunt completate si daca numele de utilizator este unic.
     /// </summary>
-    class RegisterException:Exception
+    class RegisterException :Exception
     {
         private string _message;
         public RegisterException(string message): base(message)

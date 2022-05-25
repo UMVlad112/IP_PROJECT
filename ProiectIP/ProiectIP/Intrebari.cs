@@ -6,11 +6,17 @@ using System.Threading.Tasks;
 
 namespace ProiectIP
 {
+    /// <summary>
+    /// Clasa care stocheaza toate informatiile necesare crearii unei intrebari
+    /// </summary>
     class Intrebare
     {
         private string _intrebare;
         private List<string> _raspunsuri;
         private int _indexRaspunsCorect;
+        /// <summary>
+        /// Getter pentru a obtine intrebarea propriu zisa.
+        /// </summary>
         public string GetIntrebare
         {
             get
@@ -18,7 +24,9 @@ namespace ProiectIP
                 return this._intrebare;
             }
         }
-
+        /// <summary>
+        /// Getter pentru a obtine lista de raspunsuri pentru intrebarea curenta
+        /// </summary>
        public List<string> GetRaspunsuri
         {
             get
@@ -26,7 +34,9 @@ namespace ProiectIP
                 return this._raspunsuri;
             }
         }
-
+        /// <summary>
+        /// Getter pentru a obtine raspunsul corect la intrebare
+        /// </summary>
         public string GetRaspunsCorect
         {
             get
@@ -34,7 +44,9 @@ namespace ProiectIP
                 return this._raspunsuri[this._indexRaspunsCorect];
             }
         }
-
+        /// <summary>
+        /// Getter pentru a obtine indexul intrebarii corecte.
+        /// </summary>
         public int GetIndexRaspunsCorect
         {
             get
@@ -42,7 +54,26 @@ namespace ProiectIP
                 return this._indexRaspunsCorect;
             }
         }
-
+        /// <summary>
+        /// Constructor pentru clasa Intrebare
+        /// </summary>
+        /// <param name="intrebare">
+        /// String-ul cu intrebarea
+        /// </param>
+        /// <param name="raspuns1">
+        /// Primul raspuns la intrebare
+        /// </param>
+        /// <param name="raspuns2">
+        /// Al doilea raspuns la intrebare
+        /// </param>
+        /// <param name="raspuns3">
+        /// Al treilea raspuns la intrebare
+        /// </param>
+        /// <param name="raspuns4">
+        /// Ultimul raspuns la intrebare</param>
+        /// <param name="indexRaspunsCorect">
+        /// Indexul raspunsului corect (intre 0 si 3)
+        /// </param>
         public Intrebare(string intrebare,string raspuns1,string raspuns2,string raspuns3,string raspuns4,int indexRaspunsCorect)
         {
             this._intrebare = intrebare;

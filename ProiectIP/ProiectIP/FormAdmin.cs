@@ -10,13 +10,29 @@ using System.Windows.Forms;
 
 namespace ProiectIP
 {
+    /// <summary>
+    /// Form-ul secundar, utilizat de userii cu drept de admin.
+    /// </summary>
     public partial class FormAdmin : Form
     {
+        //Lista de textBoxes pentru a citi mai usor raspunsurile.
         private List<TextBox> _textBoxes;
+        //Lista de radioButtons pentru a afla mai usor care este raspunsul selectat ca fiind corect.
         private List<RadioButton> _radioButtons  ;
+        //Referinta catre main form-ul care realizeaza logica de log-in.
         private Form _formLogin;
+        //User-ul curent.
         private User _user;
 
+        /// <summary>
+        /// Constructor
+        /// </summary>
+        /// <param name="mainForm">
+        /// Referinta catre main form-ul care realizeaza logica de log-in. 
+        /// </param>
+        /// <param name="user">
+        /// User-ul curent
+        /// </param>
         public FormAdmin( Form mainForm,User user)
         {
             InitializeComponent();
@@ -29,7 +45,12 @@ namespace ProiectIP
         }
 
         
-
+        /// <summary>
+        /// Metoda folosita pentru a afisa un text de tip placeholder pentru a avea un user experienta mai bun.
+        /// Cand se apasa pe textBox pentru a introduce un input, text-ul placeholder dispare.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void textBoxAnswer1_Enter(object sender, EventArgs e)
         {
             if (textBoxAnswer1.Text == "Write your answer here.....")
@@ -38,6 +59,12 @@ namespace ProiectIP
                 textBoxAnswer1.ForeColor = Color.Black;
             }
         }
+        /// <summary>
+        /// Metoda folosita pentru a afisa un text de tip placeholder pentru a avea un user experienta mai bun.
+        /// Cand se apasa pe textBox pentru a introduce un input, text-ul placeholder dispare.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void textBoxAnswer2_Enter(object sender, EventArgs e)
         {
             if (textBoxAnswer2.Text == "Write your answer here.....")
@@ -46,6 +73,12 @@ namespace ProiectIP
                 textBoxAnswer2.ForeColor = Color.Black;
             }
         }
+        /// <summary>
+        /// Metoda folosita pentru a afisa un text de tip placeholder pentru a avea un user experienta mai bun.
+        /// Cand se apasa pe textBox pentru a introduce un input, text-ul placeholder dispare.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void textBoxAnswer3_Enter(object sender, EventArgs e)
         {
             if (textBoxAnswer3.Text == "Write your answer here.....")
@@ -54,6 +87,12 @@ namespace ProiectIP
                 textBoxAnswer3.ForeColor = Color.Black;
             }
         }
+        /// <summary>
+        /// Metoda folosita pentru a afisa un text de tip placeholder pentru a avea un user experienta mai bun.
+        /// Cand se apasa pe textBox pentru a introduce un input, text-ul placeholder dispare.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void textBoxAnswer4_Enter(object sender, EventArgs e)
         {
             if (textBoxAnswer4.Text == "Write your answer here.....")
@@ -63,6 +102,11 @@ namespace ProiectIP
             }
         }
 
+        /// <summary>
+        /// Metoda de onClick care se apeleaza atunci cand un admin doreste sa introduca o noua intrebare.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void buttonAdd_Click(object sender, EventArgs e)
         {
             string Intrebare = richTextBoxQuestionAdmin.Text;
@@ -78,6 +122,7 @@ namespace ProiectIP
                     throw new InregistrareIntrebareException("Va rugam completati toate campurile!");
                 }
                 int i = 0;
+                //Se cauta radioButton-ul din dreptul raspunsului considerat corect.
                 foreach(RadioButton button in groupBoxAnswers.Controls.OfType<RadioButton>())
                 {
                     if(button.Checked==true)
@@ -110,8 +155,12 @@ namespace ProiectIP
            
         }
 
-        
 
+        /// <summary>
+        /// Metoda de onClick care se apeleaza atunci cand utilizatorul doreste sa se intoarca la meniul de log-in.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void buttonDisconectAdmin_Click(object sender, EventArgs e)
         {
 
@@ -121,7 +170,11 @@ namespace ProiectIP
             _formLogin.Show();
            
         }
-
+        /// <summary>
+        /// Metoda de onClick care se apeleaza atunci cand un admin doreste sa deschida Form-ul prin care se poate adauga un user cu drepturi privilegiate.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void buttonRegisterAdmin_Click(object sender, EventArgs e)
         {
             Form RegisterNewAdmin = new FormRegisterAdmin();
