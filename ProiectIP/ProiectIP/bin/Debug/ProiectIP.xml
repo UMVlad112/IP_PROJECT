@@ -1,0 +1,657 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ProiectIP</name>
+    </assembly>
+    <members>
+        <member name="M:ProiectIP.Cryptography.Encrypt(System.String,System.String)">
+            <summary>
+            Encrypts specified plaintext using Rijndael symmetric key algorithm
+            and returns a base64-encoded result.
+            </summary>
+            <param name="plainText">
+            Plaintext value to be encrypted.
+            </param>
+            <param name="passPhrase">
+            Passphrase from which a pseudo-random password will be derived. The
+            derived password will be used to generate the encryption key.
+            Passphrase can be any string. In this example we assume that this
+            passphrase is an ASCII string.
+            </param>
+            <param name="saltValue">
+            Salt value used along with passphrase to generate password. Salt can
+            be any string. In this example we assume that salt is an ASCII string.
+            </param>
+            <param name="hashAlgorithm">
+            Hash algorithm used to generate password. Allowed values are: "MD5" and
+            "SHA1". SHA1 hashes are a bit slower, but more secure than MD5 hashes.
+            </param>
+            <param name="passwordIterations">
+            Number of iterations used to generate password. One or two iterations
+            should be enough.
+            </param>
+            <param name="initVector">
+            Initialization vector (or IV). This value is required to encrypt the
+            first block of plaintext data. For RijndaelManaged class IV must be
+            exactly 16 ASCII characters long.
+            </param>
+            <param name="keySize">
+            Size of encryption key in bits. Allowed values are: 128, 192, and 256.
+            Longer keys are more secure than shorter keys.
+            </param>
+            <returns>
+            Encrypted value formatted as a base64-encoded string.
+            </returns>
+        </member>
+        <member name="M:ProiectIP.Cryptography.Decrypt(System.String,System.String)">
+            <summary>
+            Decrypts specified ciphertext using Rijndael symmetric key algorithm.
+            </summary>
+            <param name="cipherText">
+            Base64-formatted ciphertext value.
+            </param>
+            <param name="passPhrase">
+            Passphrase from which a pseudo-random password will be derived. The
+            derived password will be used to generate the encryption key.
+            Passphrase can be any string. In this example we assume that this
+            passphrase is an ASCII string.
+            </param>
+            <param name="saltValue">
+            Salt value used along with passphrase to generate password. Salt can
+            be any string. In this example we assume that salt is an ASCII string.
+            </param>
+            <param name="hashAlgorithm">
+            Hash algorithm used to generate password. Allowed values are: "MD5" and
+            "SHA1". SHA1 hashes are a bit slower, but more secure than MD5 hashes.
+            </param>
+            <param name="passwordIterations">
+            Number of iterations used to generate password. One or two iterations
+            should be enough.
+            </param>
+            <param name="initVector">
+            Initialization vector (or IV). This value is required to encrypt the
+            first block of plaintext data. For RijndaelManaged class IV must be
+            exactly 16 ASCII characters long.
+            </param>
+            <param name="keySize">
+            Size of encryption key in bits. Allowed values are: 128, 192, and 256.
+            Longer keys are more secure than shorter keys.
+            </param>
+            <returns>
+            Decrypted string value.
+            </returns>
+            <remarks>
+            Most of the logic in this function is similar to the Encrypt
+            logic. In order for decryption to work, all parameters of this function
+            - except cipherText value - must match the corresponding parameters of
+            the Encrypt function which was called to generate the
+            ciphertext.
+            </remarks>
+        </member>
+        <member name="M:ProiectIP.Cryptography.HashString(System.String)">
+            <summary>
+            Returns the hash of a string
+            </summary>
+            <param name="str"></param>
+            <returns></returns>
+        </member>
+        <member name="T:ProiectIP.FormRezultat">
+            <summary>
+            Form-ul care se deschide atunci cand user-ul termina cele 10 intrebari, sau timpul alocat chestionarului expira.
+            </summary>
+        </member>
+        <member name="M:ProiectIP.FormRezultat.#ctor(System.Windows.Forms.Form,ProiectIP.User,System.Int32)">
+            <summary>
+            Constructor pentru Form-ul care se ocupa de afisarea rezultatului.
+            </summary>
+            <param name="mainForm">
+            O referinta la form-ul de log-in pentru a ne putea intoarce la el in caz ca user-ul doreste sa dea log-out.
+            </param>
+            <param name="user">
+            Obiect de tip user care contine informatiile persoanei care tocmai a terminat testul.
+            </param>
+            <param name="punctaj">
+            Scorul obtinut la chestionarul completat anterior.
+            </param>
+        </member>
+        <member name="M:ProiectIP.FormRezultat.FormRezultat_Load(System.Object,System.EventArgs)">
+            <summary>
+            Metoda de onLoad. Afiseaza istoricul persoanei, in caz ca acesta exista, si scorul curent.
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:ProiectIP.FormRezultat.buttonDisconnect_Click(System.Object,System.EventArgs)">
+            <summary>
+            Metoda de onClick care se apeleaza atunci cand utilizatorul doreste sa se intoarca la meniul de log-in.
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:ProiectIP.FormRezultat.buttonRedo_Click(System.Object,System.EventArgs)">
+            <summary>
+            Metoda de onClick care se apeleaza atunci cand utilizatorul doreste sa inceapa un nou chestionar.
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="F:ProiectIP.FormRezultat.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:ProiectIP.FormRezultat.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:ProiectIP.FormRezultat.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:ProiectIP.InregistrareIntrebareException">
+            <summary>
+            Clasa de exceptie utilizata la crearea unei intrebari de catre un user cu drepturi de admin. Exceptia este aruncata atunci cand lipseste intrebarea sau unul dintre raspunsuri.
+            </summary>
+        </member>
+        <member name="T:ProiectIP.FormAdmin">
+            <summary>
+            Form-ul secundar, utilizat de userii cu drept de admin.
+            </summary>
+        </member>
+        <member name="M:ProiectIP.FormAdmin.#ctor(System.Windows.Forms.Form,ProiectIP.User)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="mainForm">
+            Referinta catre main form-ul care realizeaza logica de log-in. 
+            </param>
+            <param name="user">
+            User-ul curent
+            </param>
+        </member>
+        <member name="M:ProiectIP.FormAdmin.textBoxAnswer1_Enter(System.Object,System.EventArgs)">
+            <summary>
+            Metoda folosita pentru a afisa un text de tip placeholder pentru a avea un user experienta mai bun.
+            Cand se apasa pe textBox pentru a introduce un input, text-ul placeholder dispare.
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:ProiectIP.FormAdmin.textBoxAnswer2_Enter(System.Object,System.EventArgs)">
+            <summary>
+            Metoda folosita pentru a afisa un text de tip placeholder pentru a avea un user experienta mai bun.
+            Cand se apasa pe textBox pentru a introduce un input, text-ul placeholder dispare.
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:ProiectIP.FormAdmin.textBoxAnswer3_Enter(System.Object,System.EventArgs)">
+            <summary>
+            Metoda folosita pentru a afisa un text de tip placeholder pentru a avea un user experienta mai bun.
+            Cand se apasa pe textBox pentru a introduce un input, text-ul placeholder dispare.
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:ProiectIP.FormAdmin.textBoxAnswer4_Enter(System.Object,System.EventArgs)">
+            <summary>
+            Metoda folosita pentru a afisa un text de tip placeholder pentru a avea un user experienta mai bun.
+            Cand se apasa pe textBox pentru a introduce un input, text-ul placeholder dispare.
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:ProiectIP.FormAdmin.buttonAdd_Click(System.Object,System.EventArgs)">
+            <summary>
+            Metoda de onClick care se apeleaza atunci cand un admin doreste sa introduca o noua intrebare.
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:ProiectIP.FormAdmin.buttonDisconectAdmin_Click(System.Object,System.EventArgs)">
+            <summary>
+            Metoda de onClick care se apeleaza atunci cand utilizatorul doreste sa se intoarca la meniul de log-in.
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:ProiectIP.FormAdmin.buttonRegisterAdmin_Click(System.Object,System.EventArgs)">
+            <summary>
+            Metoda de onClick care se apeleaza atunci cand un admin doreste sa deschida Form-ul prin care se poate adauga un user cu drepturi privilegiate.
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="F:ProiectIP.FormAdmin.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:ProiectIP.FormAdmin.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:ProiectIP.FormAdmin.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:ProiectIP.FormChestionar">
+            <summary>
+            Form-ul secundar, utilizat de userii simpli, care doresc sa raspunda la un chestionar cu 10 intrebari.
+            </summary>
+        </member>
+        <member name="M:ProiectIP.FormChestionar.#ctor(System.Windows.Forms.Form,ProiectIP.User)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="mainForm">
+            Form-ul principal care contine logica de log-in
+            </param>
+            <param name="user">
+            User-ul care a pornit testul
+            </param>
+        </member>
+        <member name="M:ProiectIP.FormChestionar.buttonA_Click(System.Object,System.EventArgs)">
+            <summary>
+            Metoda de onClick care se apeleaza atunci cand utilizatorul alege un raspuns ca fiind corect.
+            Butonul selectat este evidentiat prin culoarea verde iar indexul raspunsului selectat se schimba in 0.
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:ProiectIP.FormChestionar.buttonB_Click(System.Object,System.EventArgs)">
+            <summary>
+            Metoda de onClick care se apeleaza atunci cand utilizatorul alege un raspuns ca fiind corect.
+            Butonul selectat este evidentiat prin culoarea verde iar indexul raspunsului selectat se schimba in 1.
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:ProiectIP.FormChestionar.buttonC_Click(System.Object,System.EventArgs)">
+            <summary>
+            Metoda de onClick care se apeleaza atunci cand utilizatorul alege un raspuns ca fiind corect.
+            Butonul selectat este evidentiat prin culoarea verde iar indexul raspunsului selectat se schimba in 2.
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:ProiectIP.FormChestionar.buttonD_Click(System.Object,System.EventArgs)">
+            <summary>
+            Metoda de onClick care se apeleaza atunci cand utilizatorul alege un raspuns ca fiind corect.
+            Butonul selectat este evidentiat prin culoarea verde iar indexul raspunsului selectat se schimba in 3.
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:ProiectIP.FormChestionar.buttonDisconect_Click(System.Object,System.EventArgs)">
+            <summary>
+            Metoda de onClick care se apeleaza atunci cand utilizatorul doreste sa paraseasca chestionarul si sa se intoarca la meniul de log-in.
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:ProiectIP.FormChestionar.FormChestionar_Load(System.Object,System.EventArgs)">
+            <summary>
+            Metoda de onLoad a chestionarului prin care se salveaza lista de intrebari si se afiseaza o prima intrebare.
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:ProiectIP.FormChestionar.AfiseazaIntrebare(ProiectIP.Intrebare)">
+            <summary>
+            Metoda care schimba text-ul din richTextBox atunci cand se trece la o alta intrebare.
+            </summary>
+            <param name="intrebare"></param>
+        </member>
+        <member name="M:ProiectIP.FormChestionar.ResetColor">
+            <summary>
+            Metoda care reseteaza culoarea butoanelor cand se trece la o noua intrebare.
+            </summary>
+        </member>
+        <member name="M:ProiectIP.FormChestionar.buttonNext_Click(System.Object,System.EventArgs)">
+            <summary>
+            Metoda de onClick care se apeleaza atunci cand utilizatorul trece la o noua intrebare.
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:ProiectIP.FormChestionar.timer1_Tick(System.Object,System.EventArgs)">
+            <summary>
+            Metoda care se ocupa decrementarea timer-ului la fiecare secunda.
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:ProiectIP.FormChestionar.showTimer(System.Int32)">
+            <summary>
+            Metoda folosita pentru a afisa corect timpul ramas pe interfata.
+            </summary>
+            <param name="timeLeft"></param>
+        </member>
+        <member name="F:ProiectIP.FormChestionar.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:ProiectIP.FormChestionar.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:ProiectIP.FormChestionar.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:ProiectIP.FormFactory">
+            <summary>
+            Clasa abstracta care are o singura metoda, CreateForm, prin care se vor creea Form-uri la runtime, in functie de tipul de utilizator care foloseste aplicatia.
+            </summary>
+            
+        </member>
+        <member name="T:ProiectIP.ConcreteFormIntrebari">
+            <summary>
+            Clasa concreta care implementeaza metoda CreateForm din FormFactory si intoarce un form pentru utilizatorii simpli.
+            </summary>
+        </member>
+        <member name="T:ProiectIP.ConcreteFormAdmin">
+            <summary>
+            Clasa concreta care implementeaza metoda CreateForm din FormFactory si intoarce un form pentru utilizatorii cu drepturi de admin.
+            </summary>
+        </member>
+        <member name="T:ProiectIP.FormCreator">
+            <summary>
+            Clasa care creeaza Form-ul necesar, utilizandu-se de clasele derivate din FormFactory.
+            </summary>
+        </member>
+        <member name="T:ProiectIP.FormLogin">
+            <summary>
+            Form-ul principal al aplicatiei, prin care user-ul acceseaza chestionarele.
+            </summary>
+        </member>
+        <member name="M:ProiectIP.FormLogin.buttonRegister_Click(System.Object,System.EventArgs)">
+            <summary>
+            Metoda de onClick apelata atunci cand utilizatorul doreste sa-si creeze un cont personal pentru a accesa aplicatia.
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:ProiectIP.FormLogin.FormLogin_Load(System.Object,System.EventArgs)">
+            <summary>
+            Metoda de onLoad al Form-ului care citeste toti userii din fisier si ii stocheaza intr-o lista de "User".
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:ProiectIP.FormLogin.buttonLogin_Click(System.Object,System.EventArgs)">
+            <summary>
+            Metoda de onClick care se apeleaza atunci cand utilizatorul doreste sa intre in cont si sa inceapa un chestionar.
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:ProiectIP.FormLogin.FormLogin_EnabledChanged(System.Object,System.EventArgs)">
+            <summary>
+            Metoda folosita pentru a resincroniza lista de utilizatori, dupa ce se adauga un nou user de catre admin.
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="F:ProiectIP.FormLogin.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:ProiectIP.FormLogin.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:ProiectIP.FormLogin.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:ProiectIP.FormRegisterAdmin">
+            <summary>
+            Form-ul care se deschide atunci cand un utilizator de tip admin doreste sa creeze un nou cont cu privilegii de admin.
+            </summary>
+        </member>
+        <member name="M:ProiectIP.FormRegisterAdmin.buttonAddAdmin_Click(System.Object,System.EventArgs)">
+            <summary>
+            Metoda de onClick care se apeleaza atunci cand admin-ul adauga un nou user cu drepturi privilegiate.
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="F:ProiectIP.FormRegisterAdmin.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:ProiectIP.FormRegisterAdmin.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:ProiectIP.FormRegisterAdmin.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:ProiectIP.Intrebare">
+            <summary>
+            Clasa care stocheaza toate informatiile necesare crearii unei intrebari
+            </summary>
+        </member>
+        <member name="P:ProiectIP.Intrebare.GetIntrebare">
+            <summary>
+            Getter pentru a obtine intrebarea propriu zisa.
+            </summary>
+        </member>
+        <member name="P:ProiectIP.Intrebare.GetRaspunsuri">
+            <summary>
+            Getter pentru a obtine lista de raspunsuri pentru intrebarea curenta
+            </summary>
+        </member>
+        <member name="P:ProiectIP.Intrebare.GetRaspunsCorect">
+            <summary>
+            Getter pentru a obtine raspunsul corect la intrebare
+            </summary>
+        </member>
+        <member name="P:ProiectIP.Intrebare.GetIndexRaspunsCorect">
+            <summary>
+            Getter pentru a obtine indexul intrebarii corecte.
+            </summary>
+        </member>
+        <member name="M:ProiectIP.Intrebare.#ctor(System.String,System.String,System.String,System.String,System.String,System.Int32)">
+            <summary>
+            Constructor pentru clasa Intrebare
+            </summary>
+            <param name="intrebare">
+            String-ul cu intrebarea
+            </param>
+            <param name="raspuns1">
+            Primul raspuns la intrebare
+            </param>
+            <param name="raspuns2">
+            Al doilea raspuns la intrebare
+            </param>
+            <param name="raspuns3">
+            Al treilea raspuns la intrebare
+            </param>
+            <param name="raspuns4">
+            Ultimul raspuns la intrebare</param>
+            <param name="indexRaspunsCorect">
+            Indexul raspunsului corect (intre 0 si 3)
+            </param>
+        </member>
+        <member name="T:ProiectIP.LoginException">
+            <summary>
+            Clasa de exceptie utilizata la log-in. Se verifica daca username-ul si parola sunt completate si daca numele de utilizator este unic.
+            </summary>
+        </member>
+        <member name="T:ProiectIP.Parser">
+            <summary>
+            Clasa utilizata pentru lucrul cu fisere; 
+            </summary>
+        </member>
+        <member name="M:ProiectIP.Parser.GetUsers(System.String)">
+            <summary>
+            Metoda care citeste din fisier toti userii inregistrati atunci cand se deschide aplicatia
+            </summary>
+            <param name="file">
+            Calea catre fisierul cu utilizatori
+            </param>
+            <returns>
+            Lista cu utilizatorii inregistrati
+            </returns>
+        </member>
+        <member name="M:ProiectIP.Parser.GetIntrebari(System.String)">
+            <summary>
+            Metoda care extrage toate intrebarile din fisier atunci cand se deschid aplicatia
+            </summary>
+            <param name="file">
+            Calea catre fisierul in care sunt stocate intrebarile
+            </param>
+            <returns>
+            Pool-ul de intrebari 
+            </returns>
+        </member>
+        <member name="M:ProiectIP.Parser.WriteIntrebareToFile(System.String,ProiectIP.Intrebare)">
+            <summary>
+            Functie pentru a adauga o noua intrebare ( sub forma criptata) in fisierul cu intrebari. Doar un utilizator cu drepturi de admin poate face acest lucru!
+            </summary>
+            <param name="file">
+            calea catre fisierul cu intrebari
+            </param>
+            <param name="intrebare">
+            Obiectul de tip Intrebare, care urmeaza a fi salvat
+            </param>
+        </member>
+        <member name="M:ProiectIP.Parser.WriteUserToFile(System.String,ProiectIP.User)">
+            <summary>
+            Metoda utilizata pentru a adauga un nou user in fisierul ce contine utilizatorii inregistrati
+            </summary>
+            <param name="file">
+            Calea catre fisierul cu utilizatori
+            </param>
+            <param name="user">
+            Obiect de tipul User ce urmeaza a fi scris in fisier
+            </param>
+        </member>
+        <member name="M:ProiectIP.Parser.WriteAndGetHistory(System.String,ProiectIP.User,System.Int32)">
+            <summary>
+            Metoda folosita pentru a obtine si actualiza istoricul unui utilizator. (Punctajele obtinute la chestionarele completate anterior)
+            </summary>
+            <param name="file">
+            Calea catre fisierul cu istoricul utilizatorilor
+            </param>
+            <param name="user">
+            Obiect de tipul User ce reprezinta userul care tocmai a terminat de completat testul
+            </param>
+            <param name="punctaj">
+            Punctajul obtinut
+            </param>
+            <returns>
+            Noul istoric , obtinut dupa actualizarea cu punctajul de la testul curent
+            </returns>
+        </member>
+        <member name="M:ProiectIP.Parser.returnScore(System.Int32)">
+            <summary>
+            Creaza un nou istoric pentru un utilizator care se afla la primul test
+            </summary>
+            <param name="punctaj">
+            Punctajul obtinut
+            </param>
+            <returns>
+            Noul istoric al utilizatorului curent
+            </returns>
+        </member>
+        <member name="M:ProiectIP.Parser.returnScore(System.String,System.Int32)">
+            <summary>
+            Metoda pentru updatarea istoricului unui utilizator care nu se afla la primul test;
+            </summary>
+            <param name="istoric">
+            Istoricul anterior completarii acestui test
+            </param>
+            <param name="punctaj">
+            Punctajul obtinut la testul curent
+            </param>
+            <returns>
+            Noul istoric al utilizatorului curent
+            </returns>
+        </member>
+        <member name="M:ProiectIP.Program.Main">
+            <summary>
+            The main entry point for the application.
+            </summary>
+        </member>
+        <member name="T:ProiectIP.User">
+            <summary>
+            Clasa care stocheaza informatiile unui utilizator 
+            </summary>
+        </member>
+        <member name="P:ProiectIP.User.GetUsername">
+            <summary>
+            Getter pentru parametrul username al unui utilizator 
+            </summary>
+        </member>
+        <member name="P:ProiectIP.User.GetHashPassword">
+            <summary>
+            Getter pentru parola hashuita a unui utilizator 
+            </summary>
+        </member>
+        <member name="P:ProiectIP.User.GetIsAdmin">
+            <summary>
+            Getter pentru a verifica daca utilizatorul este sau nu admin
+            </summary>
+        </member>
+        <member name="M:ProiectIP.User.#ctor(System.String,System.String,System.Boolean)">
+            <summary>
+            Constructor 
+            </summary>
+            <param name="username"></param>
+            Usernameul introdus
+            <param name="hashPassword"></param>
+            Hash-ul parolei introduse
+            <param name="isAdmin"></param>
+            Nivelul de acces al utilizatorului
+        </member>
+        <member name="T:ProiectIP.RegisterException">
+            <summary>
+            Clasa de exceptie utilizata la inregistrarea unui nou utilizator. Se verifica daca username-ul si parola sunt completate si daca numele de utilizator este unic.
+            </summary>
+        </member>
+        <member name="T:ProiectIP.Properties.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:ProiectIP.Properties.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:ProiectIP.Properties.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+    </members>
+</doc>

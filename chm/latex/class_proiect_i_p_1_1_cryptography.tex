@@ -1,0 +1,102 @@
+\hypertarget{class_proiect_i_p_1_1_cryptography}{}\doxysection{Proiect\+IP.\+Cryptography Class Reference}
+\label{class_proiect_i_p_1_1_cryptography}\index{ProiectIP.Cryptography@{ProiectIP.Cryptography}}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static string \mbox{\hyperlink{class_proiect_i_p_1_1_cryptography_aa03e9ad64f65eae865e77e689d8bf02f}{Encrypt}} (string text, string pass)
+\begin{DoxyCompactList}\small\item\em Encrypts specified plaintext using Rijndael symmetric key algorithm and returns a base64-\/encoded result. \end{DoxyCompactList}\item 
+static string \mbox{\hyperlink{class_proiect_i_p_1_1_cryptography_a81f9f63f264376df0328af2dc793653a}{Decrypt}} (string text, string pass)
+\begin{DoxyCompactList}\small\item\em Decrypts specified ciphertext using Rijndael symmetric key algorithm. \end{DoxyCompactList}\item 
+static string \mbox{\hyperlink{class_proiect_i_p_1_1_cryptography_a853412ddedc29fcc61ce2e9d8eefd00a}{Hash\+String}} (string str)
+\begin{DoxyCompactList}\small\item\em Returns the hash of a string \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_proiect_i_p_1_1_cryptography_a81f9f63f264376df0328af2dc793653a}\label{class_proiect_i_p_1_1_cryptography_a81f9f63f264376df0328af2dc793653a}} 
+\index{ProiectIP.Cryptography@{ProiectIP.Cryptography}!Decrypt@{Decrypt}}
+\index{Decrypt@{Decrypt}!ProiectIP.Cryptography@{ProiectIP.Cryptography}}
+\doxysubsubsection{\texorpdfstring{Decrypt()}{Decrypt()}}
+{\footnotesize\ttfamily static string Proiect\+IP.\+Cryptography.\+Decrypt (\begin{DoxyParamCaption}\item[{string}]{text,  }\item[{string}]{pass }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Decrypts specified ciphertext using Rijndael symmetric key algorithm. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cipher\+Text} & Base64-\/formatted ciphertext value. \\
+\hline
+{\em pass\+Phrase} & Passphrase from which a pseudo-\/random password will be derived. The derived password will be used to generate the encryption key. Passphrase can be any string. In this example we assume that this passphrase is an ASCII string. \\
+\hline
+{\em salt\+Value} & Salt value used along with passphrase to generate password. Salt can be any string. In this example we assume that salt is an ASCII string. \\
+\hline
+{\em hash\+Algorithm} & Hash algorithm used to generate password. Allowed values are\+: \char`\"{}\+MD5\char`\"{} and \char`\"{}\+SHA1\char`\"{}. SHA1 hashes are a bit slower, but more secure than MD5 hashes. \\
+\hline
+{\em password\+Iterations} & Number of iterations used to generate password. One or two iterations should be enough. \\
+\hline
+{\em init\+Vector} & Initialization vector (or IV). This value is required to encrypt the first block of plaintext data. For Rijndael\+Managed class IV must be exactly 16 ASCII characters long. \\
+\hline
+{\em key\+Size} & Size of encryption key in bits. Allowed values are\+: 128, 192, and 256. Longer keys are more secure than shorter keys. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Decrypted string value. 
+\end{DoxyReturn}
+
+
+Most of the logic in this function is similar to the Encrypt logic. In order for decryption to work, all parameters of this function
+\begin{DoxyItemize}
+\item except cipher\+Text value -\/ must match the corresponding parameters of the Encrypt function which was called to generate the ciphertext. 
+\end{DoxyItemize}\mbox{\Hypertarget{class_proiect_i_p_1_1_cryptography_aa03e9ad64f65eae865e77e689d8bf02f}\label{class_proiect_i_p_1_1_cryptography_aa03e9ad64f65eae865e77e689d8bf02f}} 
+\index{ProiectIP.Cryptography@{ProiectIP.Cryptography}!Encrypt@{Encrypt}}
+\index{Encrypt@{Encrypt}!ProiectIP.Cryptography@{ProiectIP.Cryptography}}
+\doxysubsubsection{\texorpdfstring{Encrypt()}{Encrypt()}}
+{\footnotesize\ttfamily static string Proiect\+IP.\+Cryptography.\+Encrypt (\begin{DoxyParamCaption}\item[{string}]{text,  }\item[{string}]{pass }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Encrypts specified plaintext using Rijndael symmetric key algorithm and returns a base64-\/encoded result. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em plain\+Text} & Plaintext value to be encrypted. \\
+\hline
+{\em pass\+Phrase} & Passphrase from which a pseudo-\/random password will be derived. The derived password will be used to generate the encryption key. Passphrase can be any string. In this example we assume that this passphrase is an ASCII string. \\
+\hline
+{\em salt\+Value} & Salt value used along with passphrase to generate password. Salt can be any string. In this example we assume that salt is an ASCII string. \\
+\hline
+{\em hash\+Algorithm} & Hash algorithm used to generate password. Allowed values are\+: \char`\"{}\+MD5\char`\"{} and \char`\"{}\+SHA1\char`\"{}. SHA1 hashes are a bit slower, but more secure than MD5 hashes. \\
+\hline
+{\em password\+Iterations} & Number of iterations used to generate password. One or two iterations should be enough. \\
+\hline
+{\em init\+Vector} & Initialization vector (or IV). This value is required to encrypt the first block of plaintext data. For Rijndael\+Managed class IV must be exactly 16 ASCII characters long. \\
+\hline
+{\em key\+Size} & Size of encryption key in bits. Allowed values are\+: 128, 192, and 256. Longer keys are more secure than shorter keys. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Encrypted value formatted as a base64-\/encoded string. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_proiect_i_p_1_1_cryptography_a853412ddedc29fcc61ce2e9d8eefd00a}\label{class_proiect_i_p_1_1_cryptography_a853412ddedc29fcc61ce2e9d8eefd00a}} 
+\index{ProiectIP.Cryptography@{ProiectIP.Cryptography}!HashString@{HashString}}
+\index{HashString@{HashString}!ProiectIP.Cryptography@{ProiectIP.Cryptography}}
+\doxysubsubsection{\texorpdfstring{HashString()}{HashString()}}
+{\footnotesize\ttfamily static string Proiect\+IP.\+Cryptography.\+Hash\+String (\begin{DoxyParamCaption}\item[{string}]{str }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns the hash of a string 
+
+
+\begin{DoxyParams}{Parameters}
+{\em str} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Proiect\+IP/\+Proiect\+IP/Cryptography.\+cs\end{DoxyCompactItemize}

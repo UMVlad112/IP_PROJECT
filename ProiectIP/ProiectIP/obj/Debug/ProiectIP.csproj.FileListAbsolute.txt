@@ -80,3 +80,4 @@ C:\Users\MikeOxlong\Desktop\Fac\IP PROIECT\IP_PROJECT\ProiectIP\ProiectIP\obj\De
 C:\Users\MikeOxlong\Desktop\Fac\IP PROIECT\IP_PROJECT\ProiectIP\ProiectIP\obj\Debug\ProiectIP.csproj.CoreCompileInputs.cache
 C:\Users\MikeOxlong\Desktop\Fac\IP PROIECT\IP_PROJECT\ProiectIP\ProiectIP\obj\Debug\ProiectIP.exe
 C:\Users\MikeOxlong\Desktop\Fac\IP PROIECT\IP_PROJECT\ProiectIP\ProiectIP\obj\Debug\ProiectIP.pdb
+C:\Users\MikeOxlong\Desktop\Fac\IP PROIECT\IP_PROJECT\ProiectIP\ProiectIP\bin\Debug\ProiectIP.xml

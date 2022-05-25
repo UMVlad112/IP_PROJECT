@@ -164,5 +164,9 @@ namespace ProiectIP
             }
         }
 
+        private void buttonChm_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("chmhelp.chm");
+        }
     }
 }

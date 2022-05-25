@@ -1,0 +1,168 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML><HEAD></HEAD><BODY>
+<OBJECT type="text/site properties">
+<param name="FrameName" value="right">
+</OBJECT>
+<UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_proiect_i_p_1_1_cryptography.html#a81f9f63f264376df0328af2dc793653a"><param name="Name" value="Decrypt"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_proiect_i_p_1_1_form_admin.html#ad83a1e1a2843848156f4d7bf789114e3"><param name="Name" value="Dispose"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_proiect_i_p_1_1_form_admin.html#ad83a1e1a2843848156f4d7bf789114e3"><param name="Name" value="ProiectIP::FormAdmin"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_proiect_i_p_1_1_form_chestionar.html#a752e8390d8427cba6448be01b8af94ef"><param name="Name" value="Dispose"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_proiect_i_p_1_1_form_chestionar.html#a752e8390d8427cba6448be01b8af94ef"><param name="Name" value="ProiectIP::FormChestionar"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_proiect_i_p_1_1_form_login.html#a9eb30b86456315127ae0b5a897377f1e"><param name="Name" value="Dispose"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_proiect_i_p_1_1_form_login.html#a9eb30b86456315127ae0b5a897377f1e"><param name="Name" value="ProiectIP::FormLogin"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_proiect_i_p_1_1_form_register_admin.html#abdf7ba2b3af1811716f57c83fc4636e1"><param name="Name" value="Dispose"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_proiect_i_p_1_1_form_register_admin.html#abdf7ba2b3af1811716f57c83fc4636e1"><param name="Name" value="ProiectIP::FormRegisterAdmin"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_proiect_i_p_1_1_form_rezultat.html#a14467bb307aedd9c2608f1070feab918"><param name="Name" value="Dispose"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_proiect_i_p_1_1_form_rezultat.html#a14467bb307aedd9c2608f1070feab918"><param name="Name" value="ProiectIP::FormRezultat"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_proiect_i_p_1_1_cryptography.html#aa03e9ad64f65eae865e77e689d8bf02f"><param name="Name" value="Encrypt"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_proiect_i_p_1_1_form_admin.html#a48d7e07c248967bc8397a28813e76544"><param name="Name" value="FormAdmin"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_proiect_i_p_1_1_form_chestionar.html#a27e8a8d33fd6f4a212bbb9db807b7f19"><param name="Name" value="FormChestionar"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_proiect_i_p_1_1_form_rezultat.html#a3f483a4ec8822d15e75e9eace1a5bd7c"><param name="Name" value="FormRezultat"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_proiect_i_p_1_1_user.html#a4fb7c580939b72ba4e2fb212c9df26ea"><param name="Name" value="GetHashPassword"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_proiect_i_p_1_1_intrebare.html#a245368ec24e575fb15731b5fd345b33a"><param name="Name" value="GetIndexRaspunsCorect"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_proiect_i_p_1_1_intrebare.html#a70ec6e2146f5770425705834ebd22e9a"><param name="Name" value="GetIntrebare"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_proiect_i_p_1_1_parser.html#a72251f206293e89af9165c235bba7238"><param name="Name" value="GetIntrebari"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_proiect_i_p_1_1_user.html#a291d2a782c231b003be026f9c6e9f950"><param name="Name" value="GetIsAdmin"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_proiect_i_p_1_1_intrebare.html#ac7e88dd39f8c09a834bd7f5c8055632e"><param name="Name" value="GetRaspunsCorect"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_proiect_i_p_1_1_intrebare.html#a492e3b4d65c770dd8e46aea464c805ed"><param name="Name" value="GetRaspunsuri"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_proiect_i_p_1_1_user.html#af245908cf5fab62c6587709a7649e558"><param name="Name" value="GetUsername"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_proiect_i_p_1_1_parser.html#a5a47e53f0b510bd483e4551701ca0e59"><param name="Name" value="GetUsers"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_proiect_i_p_1_1_cryptography.html#a853412ddedc29fcc61ce2e9d8eefd00a"><param name="Name" value="HashString"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="md__r_e_a_d_m_e.html"><param name="Name" value="IP_PROJECT"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_proiect_i_p_1_1_intrebare.html#a33c6f1df6d0e4f042fc185a878b59146"><param name="Name" value="Intrebare"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="namespace_proiect_i_p.html"><param name="Name" value="ProiectIP"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_proiect_i_p_1_1_concrete_form_admin.html"><param name="Name" value="ProiectIP::ConcreteFormAdmin"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_proiect_i_p_1_1_concrete_form_intrebari.html"><param name="Name" value="ProiectIP::ConcreteFormIntrebari"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_proiect_i_p_1_1_cryptography.html"><param name="Name" value="ProiectIP::Cryptography"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_proiect_i_p_1_1_cryptography.html"><param name="Name" value="ProiectIP::Cryptography"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_proiect_i_p_1_1_cryptography.html#a81f9f63f264376df0328af2dc793653a"><param name="Name" value="Decrypt"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_proiect_i_p_1_1_cryptography.html"><param name="Name" value="ProiectIP::Cryptography"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_proiect_i_p_1_1_cryptography.html#aa03e9ad64f65eae865e77e689d8bf02f"><param name="Name" value="Encrypt"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_proiect_i_p_1_1_cryptography.html"><param name="Name" value="ProiectIP::Cryptography"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_proiect_i_p_1_1_cryptography.html#a853412ddedc29fcc61ce2e9d8eefd00a"><param name="Name" value="HashString"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_proiect_i_p_1_1_form_admin.html"><param name="Name" value="ProiectIP::FormAdmin"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_proiect_i_p_1_1_form_admin.html"><param name="Name" value="ProiectIP::FormAdmin"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_proiect_i_p_1_1_form_admin.html#ad83a1e1a2843848156f4d7bf789114e3"><param name="Name" value="Dispose"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_proiect_i_p_1_1_form_admin.html"><param name="Name" value="ProiectIP::FormAdmin"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_proiect_i_p_1_1_form_admin.html#a48d7e07c248967bc8397a28813e76544"><param name="Name" value="FormAdmin"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_proiect_i_p_1_1_form_chestionar.html"><param name="Name" value="ProiectIP::FormChestionar"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_proiect_i_p_1_1_form_chestionar.html"><param name="Name" value="ProiectIP::FormChestionar"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_proiect_i_p_1_1_form_chestionar.html#a752e8390d8427cba6448be01b8af94ef"><param name="Name" value="Dispose"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_proiect_i_p_1_1_form_chestionar.html"><param name="Name" value="ProiectIP::FormChestionar"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_proiect_i_p_1_1_form_chestionar.html#a27e8a8d33fd6f4a212bbb9db807b7f19"><param name="Name" value="FormChestionar"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_proiect_i_p_1_1_form_creator.html"><param name="Name" value="ProiectIP::FormCreator"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_proiect_i_p_1_1_form_factory.html"><param name="Name" value="ProiectIP::FormFactory"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_proiect_i_p_1_1_form_login.html"><param name="Name" value="ProiectIP::FormLogin"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_proiect_i_p_1_1_form_login.html"><param name="Name" value="ProiectIP::FormLogin"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_proiect_i_p_1_1_form_login.html#a9eb30b86456315127ae0b5a897377f1e"><param name="Name" value="Dispose"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_proiect_i_p_1_1_form_register_admin.html"><param name="Name" value="ProiectIP::FormRegisterAdmin"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_proiect_i_p_1_1_form_register_admin.html"><param name="Name" value="ProiectIP::FormRegisterAdmin"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_proiect_i_p_1_1_form_register_admin.html#abdf7ba2b3af1811716f57c83fc4636e1"><param name="Name" value="Dispose"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_proiect_i_p_1_1_form_rezultat.html"><param name="Name" value="ProiectIP::FormRezultat"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_proiect_i_p_1_1_form_rezultat.html"><param name="Name" value="ProiectIP::FormRezultat"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_proiect_i_p_1_1_form_rezultat.html#a14467bb307aedd9c2608f1070feab918"><param name="Name" value="Dispose"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_proiect_i_p_1_1_form_rezultat.html"><param name="Name" value="ProiectIP::FormRezultat"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_proiect_i_p_1_1_form_rezultat.html#a3f483a4ec8822d15e75e9eace1a5bd7c"><param name="Name" value="FormRezultat"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_proiect_i_p_1_1_inregistrare_intrebare_exception.html"><param name="Name" value="ProiectIP::InregistrareIntrebareException"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_proiect_i_p_1_1_intrebare.html"><param name="Name" value="ProiectIP::Intrebare"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_proiect_i_p_1_1_intrebare.html"><param name="Name" value="ProiectIP::Intrebare"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_proiect_i_p_1_1_intrebare.html#a245368ec24e575fb15731b5fd345b33a"><param name="Name" value="GetIndexRaspunsCorect"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_proiect_i_p_1_1_intrebare.html"><param name="Name" value="ProiectIP::Intrebare"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_proiect_i_p_1_1_intrebare.html#a70ec6e2146f5770425705834ebd22e9a"><param name="Name" value="GetIntrebare"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_proiect_i_p_1_1_intrebare.html"><param name="Name" value="ProiectIP::Intrebare"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_proiect_i_p_1_1_intrebare.html#ac7e88dd39f8c09a834bd7f5c8055632e"><param name="Name" value="GetRaspunsCorect"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_proiect_i_p_1_1_intrebare.html"><param name="Name" value="ProiectIP::Intrebare"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_proiect_i_p_1_1_intrebare.html#a492e3b4d65c770dd8e46aea464c805ed"><param name="Name" value="GetRaspunsuri"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_proiect_i_p_1_1_intrebare.html"><param name="Name" value="ProiectIP::Intrebare"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_proiect_i_p_1_1_intrebare.html#a33c6f1df6d0e4f042fc185a878b59146"><param name="Name" value="Intrebare"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_proiect_i_p_1_1_login_exception.html"><param name="Name" value="ProiectIP::LoginException"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_proiect_i_p_1_1_parser.html"><param name="Name" value="ProiectIP::Parser"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_proiect_i_p_1_1_parser.html"><param name="Name" value="ProiectIP::Parser"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_proiect_i_p_1_1_parser.html#a72251f206293e89af9165c235bba7238"><param name="Name" value="GetIntrebari"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_proiect_i_p_1_1_parser.html"><param name="Name" value="ProiectIP::Parser"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_proiect_i_p_1_1_parser.html#a5a47e53f0b510bd483e4551701ca0e59"><param name="Name" value="GetUsers"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_proiect_i_p_1_1_parser.html"><param name="Name" value="ProiectIP::Parser"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_proiect_i_p_1_1_parser.html#af33dfdb7d5127a7114963d3110272305"><param name="Name" value="WriteAndGetHistory"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_proiect_i_p_1_1_parser.html"><param name="Name" value="ProiectIP::Parser"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_proiect_i_p_1_1_parser.html#a2582a8e039923b6e764d2d35b545de20"><param name="Name" value="WriteIntrebareToFile"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_proiect_i_p_1_1_parser.html"><param name="Name" value="ProiectIP::Parser"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_proiect_i_p_1_1_parser.html#a01bbe25424fcd8ddc17fc5453f53dd80"><param name="Name" value="WriteUserToFile"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="namespace_proiect_i_p_1_1_properties.html"><param name="Name" value="ProiectIP::Properties"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_proiect_i_p_1_1_register_exception.html"><param name="Name" value="ProiectIP::RegisterException"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_proiect_i_p_1_1_user.html"><param name="Name" value="ProiectIP::User"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_proiect_i_p_1_1_user.html"><param name="Name" value="ProiectIP::User"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_proiect_i_p_1_1_user.html#a4fb7c580939b72ba4e2fb212c9df26ea"><param name="Name" value="GetHashPassword"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_proiect_i_p_1_1_user.html"><param name="Name" value="ProiectIP::User"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_proiect_i_p_1_1_user.html#a291d2a782c231b003be026f9c6e9f950"><param name="Name" value="GetIsAdmin"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_proiect_i_p_1_1_user.html"><param name="Name" value="ProiectIP::User"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_proiect_i_p_1_1_user.html#af245908cf5fab62c6587709a7649e558"><param name="Name" value="GetUsername"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_proiect_i_p_1_1_user.html"><param name="Name" value="ProiectIP::User"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_proiect_i_p_1_1_user.html#a87aafc119f7ce89eabffcd83a443b0a7"><param name="Name" value="User"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_proiect_i_p_1_1_user.html#a87aafc119f7ce89eabffcd83a443b0a7"><param name="Name" value="User"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_proiect_i_p_1_1_parser.html#af33dfdb7d5127a7114963d3110272305"><param name="Name" value="WriteAndGetHistory"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_proiect_i_p_1_1_parser.html#a2582a8e039923b6e764d2d35b545de20"><param name="Name" value="WriteIntrebareToFile"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_proiect_i_p_1_1_parser.html#a01bbe25424fcd8ddc17fc5453f53dd80"><param name="Name" value="WriteUserToFile"></OBJECT>
+</UL>
+</BODY>
+</HTML>

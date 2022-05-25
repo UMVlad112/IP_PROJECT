@@ -1,0 +1,123 @@
+\hypertarget{class_proiect_i_p_1_1_parser}{}\doxysection{Proiect\+IP.\+Parser Class Reference}
+\label{class_proiect_i_p_1_1_parser}\index{ProiectIP.Parser@{ProiectIP.Parser}}
+
+
+Clasa utilizata pentru lucrul cu fisere;  
+
+
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static List$<$ \mbox{\hyperlink{class_proiect_i_p_1_1_user}{User}} $>$ \mbox{\hyperlink{class_proiect_i_p_1_1_parser_a5a47e53f0b510bd483e4551701ca0e59}{Get\+Users}} (string file)
+\begin{DoxyCompactList}\small\item\em Metoda care citeste din fisier toti userii inregistrati atunci cand se deschide aplicatia \end{DoxyCompactList}\item 
+static List$<$ \mbox{\hyperlink{class_proiect_i_p_1_1_intrebare}{Intrebare}} $>$ \mbox{\hyperlink{class_proiect_i_p_1_1_parser_a72251f206293e89af9165c235bba7238}{Get\+Intrebari}} (string file)
+\begin{DoxyCompactList}\small\item\em Metoda care extrage toate intrebarile din fisier atunci cand se deschid aplicatia \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_proiect_i_p_1_1_parser_a2582a8e039923b6e764d2d35b545de20}{Write\+Intrebare\+To\+File}} (string file, \mbox{\hyperlink{class_proiect_i_p_1_1_intrebare}{Intrebare}} intrebare)
+\begin{DoxyCompactList}\small\item\em Functie pentru a adauga o noua intrebare ( sub forma criptata) in fisierul cu intrebari. Doar un utilizator cu drepturi de admin poate face acest lucru! \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_proiect_i_p_1_1_parser_a01bbe25424fcd8ddc17fc5453f53dd80}{Write\+User\+To\+File}} (string file, \mbox{\hyperlink{class_proiect_i_p_1_1_user}{User}} user)
+\begin{DoxyCompactList}\small\item\em Metoda utilizata pentru a adauga un nou user in fisierul ce contine utilizatorii inregistrati \end{DoxyCompactList}\item 
+static string \mbox{\hyperlink{class_proiect_i_p_1_1_parser_af33dfdb7d5127a7114963d3110272305}{Write\+And\+Get\+History}} (string file, \mbox{\hyperlink{class_proiect_i_p_1_1_user}{User}} user, int punctaj)
+\begin{DoxyCompactList}\small\item\em Metoda folosita pentru a obtine si actualiza istoricul unui utilizator. (Punctajele obtinute la chestionarele completate anterior) \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Clasa utilizata pentru lucrul cu fisere; 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_proiect_i_p_1_1_parser_a72251f206293e89af9165c235bba7238}\label{class_proiect_i_p_1_1_parser_a72251f206293e89af9165c235bba7238}} 
+\index{ProiectIP.Parser@{ProiectIP.Parser}!GetIntrebari@{GetIntrebari}}
+\index{GetIntrebari@{GetIntrebari}!ProiectIP.Parser@{ProiectIP.Parser}}
+\doxysubsubsection{\texorpdfstring{GetIntrebari()}{GetIntrebari()}}
+{\footnotesize\ttfamily static List$<$ \mbox{\hyperlink{class_proiect_i_p_1_1_intrebare}{Intrebare}} $>$ Proiect\+IP.\+Parser.\+Get\+Intrebari (\begin{DoxyParamCaption}\item[{string}]{file }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Metoda care extrage toate intrebarile din fisier atunci cand se deschid aplicatia 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file} & Calea catre fisierul in care sunt stocate intrebarile \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pool-\/ul de intrebari 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_proiect_i_p_1_1_parser_a5a47e53f0b510bd483e4551701ca0e59}\label{class_proiect_i_p_1_1_parser_a5a47e53f0b510bd483e4551701ca0e59}} 
+\index{ProiectIP.Parser@{ProiectIP.Parser}!GetUsers@{GetUsers}}
+\index{GetUsers@{GetUsers}!ProiectIP.Parser@{ProiectIP.Parser}}
+\doxysubsubsection{\texorpdfstring{GetUsers()}{GetUsers()}}
+{\footnotesize\ttfamily static List$<$ \mbox{\hyperlink{class_proiect_i_p_1_1_user}{User}} $>$ Proiect\+IP.\+Parser.\+Get\+Users (\begin{DoxyParamCaption}\item[{string}]{file }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Metoda care citeste din fisier toti userii inregistrati atunci cand se deschide aplicatia 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file} & Calea catre fisierul cu utilizatori \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Lista cu utilizatorii inregistrati 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_proiect_i_p_1_1_parser_af33dfdb7d5127a7114963d3110272305}\label{class_proiect_i_p_1_1_parser_af33dfdb7d5127a7114963d3110272305}} 
+\index{ProiectIP.Parser@{ProiectIP.Parser}!WriteAndGetHistory@{WriteAndGetHistory}}
+\index{WriteAndGetHistory@{WriteAndGetHistory}!ProiectIP.Parser@{ProiectIP.Parser}}
+\doxysubsubsection{\texorpdfstring{WriteAndGetHistory()}{WriteAndGetHistory()}}
+{\footnotesize\ttfamily static string Proiect\+IP.\+Parser.\+Write\+And\+Get\+History (\begin{DoxyParamCaption}\item[{string}]{file,  }\item[{\mbox{\hyperlink{class_proiect_i_p_1_1_user}{User}}}]{user,  }\item[{int}]{punctaj }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Metoda folosita pentru a obtine si actualiza istoricul unui utilizator. (Punctajele obtinute la chestionarele completate anterior) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file} & Calea catre fisierul cu istoricul utilizatorilor \\
+\hline
+{\em user} & Obiect de tipul \mbox{\hyperlink{class_proiect_i_p_1_1_user}{User}} ce reprezinta userul care tocmai a terminat de completat testul \\
+\hline
+{\em punctaj} & Punctajul obtinut \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Noul istoric , obtinut dupa actualizarea cu punctajul de la testul curent 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_proiect_i_p_1_1_parser_a2582a8e039923b6e764d2d35b545de20}\label{class_proiect_i_p_1_1_parser_a2582a8e039923b6e764d2d35b545de20}} 
+\index{ProiectIP.Parser@{ProiectIP.Parser}!WriteIntrebareToFile@{WriteIntrebareToFile}}
+\index{WriteIntrebareToFile@{WriteIntrebareToFile}!ProiectIP.Parser@{ProiectIP.Parser}}
+\doxysubsubsection{\texorpdfstring{WriteIntrebareToFile()}{WriteIntrebareToFile()}}
+{\footnotesize\ttfamily static void Proiect\+IP.\+Parser.\+Write\+Intrebare\+To\+File (\begin{DoxyParamCaption}\item[{string}]{file,  }\item[{\mbox{\hyperlink{class_proiect_i_p_1_1_intrebare}{Intrebare}}}]{intrebare }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Functie pentru a adauga o noua intrebare ( sub forma criptata) in fisierul cu intrebari. Doar un utilizator cu drepturi de admin poate face acest lucru! 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file} & calea catre fisierul cu intrebari \\
+\hline
+{\em intrebare} & Obiectul de tip \mbox{\hyperlink{class_proiect_i_p_1_1_intrebare}{Intrebare}}, care urmeaza a fi salvat \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_proiect_i_p_1_1_parser_a01bbe25424fcd8ddc17fc5453f53dd80}\label{class_proiect_i_p_1_1_parser_a01bbe25424fcd8ddc17fc5453f53dd80}} 
+\index{ProiectIP.Parser@{ProiectIP.Parser}!WriteUserToFile@{WriteUserToFile}}
+\index{WriteUserToFile@{WriteUserToFile}!ProiectIP.Parser@{ProiectIP.Parser}}
+\doxysubsubsection{\texorpdfstring{WriteUserToFile()}{WriteUserToFile()}}
+{\footnotesize\ttfamily static void Proiect\+IP.\+Parser.\+Write\+User\+To\+File (\begin{DoxyParamCaption}\item[{string}]{file,  }\item[{\mbox{\hyperlink{class_proiect_i_p_1_1_user}{User}}}]{user }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Metoda utilizata pentru a adauga un nou user in fisierul ce contine utilizatorii inregistrati 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file} & Calea catre fisierul cu utilizatori \\
+\hline
+{\em user} & Obiect de tipul \mbox{\hyperlink{class_proiect_i_p_1_1_user}{User}} ce urmeaza a fi scris in fisier \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Proiect\+IP/\+Proiect\+IP/Parser.\+cs\end{DoxyCompactItemize}
