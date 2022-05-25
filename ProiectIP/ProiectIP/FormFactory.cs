@@ -1,4 +1,23 @@
-﻿using System;
+﻿/**************************************************************************
+ *                                                                        *
+ *  File:        FormFactory.cs                                           *
+ *  Copyright:   (c) 2022, Ilie Florentin                                 *
+ *  Description: Fisier cu mai multe clase, prin care se implementeaza    *
+ *               design patter-ul Factory. Acesta este utilizat pentru    *
+ *               a deschide o interfata noua in functie de user-ul        *
+ *               care se conecteaza.                                      *
+ *                                                                        *
+ *  This program is free software; you can redistribute it and/or modify  *
+ *  it under the terms of the GNU General Public License as published by  *
+ *  the Free Software Foundation. This program is distributed in the      *
+ *  hope that it will be useful, but WITHOUT ANY WARRANTY; without even   *
+ *  the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR   *
+ *  PURPOSE. See the GNU General Public License for more details.         *
+ *                                                                        *
+ **************************************************************************/
+
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
