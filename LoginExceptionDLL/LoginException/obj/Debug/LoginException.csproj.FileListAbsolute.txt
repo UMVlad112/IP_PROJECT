@@ -1,0 +1,6 @@
+D:\FACULTATE-AN3-SEM2\PROIECT IP BUN\LoginExceptionDLL\LoginException\bin\Debug\LoginException.dll
+D:\FACULTATE-AN3-SEM2\PROIECT IP BUN\LoginExceptionDLL\LoginException\bin\Debug\LoginException.pdb
+D:\FACULTATE-AN3-SEM2\PROIECT IP BUN\LoginExceptionDLL\LoginException\obj\Debug\LoginException.csproj.AssemblyReference.cache
+D:\FACULTATE-AN3-SEM2\PROIECT IP BUN\LoginExceptionDLL\LoginException\obj\Debug\LoginException.csproj.CoreCompileInputs.cache
+D:\FACULTATE-AN3-SEM2\PROIECT IP BUN\LoginExceptionDLL\LoginException\obj\Debug\LoginException.dll
+D:\FACULTATE-AN3-SEM2\PROIECT IP BUN\LoginExceptionDLL\LoginException\obj\Debug\LoginException.pdb

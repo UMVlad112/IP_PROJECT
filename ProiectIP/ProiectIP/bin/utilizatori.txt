@@ -1,0 +1,8 @@
+florentin	FeEv/9NoTQyCguH+kjCQgOGiKXg=	False
+admin	0DPiKuNIrrVmD8IUCuw1hQxNqZc=	True
+admin2	MV8WbFrKY6FX99QQB2dctEqUizM=	True
+test	qUqP5cyxm6YcTAhz05Hph5gvu9M=	False
+bogdan	Df9I852LOYi6o9VGlqVP1jIY+hc=	False
+test2	EJ9LPFDXsN9ynSmbxvjp75Bmlx8=	False
+cvvvvvv	wll+f37Xo7+PmKBO6+nFTwNxpoM=	True
+ssss	v5Zh3vo9rsrP3lveAhTEpDk1HU0=	True

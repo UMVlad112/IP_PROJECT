@@ -1,0 +1,6 @@
+D:\FACULTATE-AN3-SEM2\PROIECT IP BUN\Intrebari\Intrebari\bin\Debug\Intrebari.dll
+D:\FACULTATE-AN3-SEM2\PROIECT IP BUN\Intrebari\Intrebari\bin\Debug\Intrebari.pdb
+D:\FACULTATE-AN3-SEM2\PROIECT IP BUN\Intrebari\Intrebari\obj\Debug\Intrebari.csproj.AssemblyReference.cache
+D:\FACULTATE-AN3-SEM2\PROIECT IP BUN\Intrebari\Intrebari\obj\Debug\Intrebari.csproj.CoreCompileInputs.cache
+D:\FACULTATE-AN3-SEM2\PROIECT IP BUN\Intrebari\Intrebari\obj\Debug\Intrebari.dll
+D:\FACULTATE-AN3-SEM2\PROIECT IP BUN\Intrebari\Intrebari\obj\Debug\Intrebari.pdb

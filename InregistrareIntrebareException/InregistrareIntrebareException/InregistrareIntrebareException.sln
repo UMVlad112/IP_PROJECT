@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31727.386
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InregistrareIntrebareException", "InregistrareIntrebareException.csproj", "{35D79ABC-6337-4864-876C-2473044E6830}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{35D79ABC-6337-4864-876C-2473044E6830}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35D79ABC-6337-4864-876C-2473044E6830}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35D79ABC-6337-4864-876C-2473044E6830}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35D79ABC-6337-4864-876C-2473044E6830}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EF7A61A1-2FA1-4DBB-92F7-9C3CF55F7DC9}
+	EndGlobalSection
+EndGlobal

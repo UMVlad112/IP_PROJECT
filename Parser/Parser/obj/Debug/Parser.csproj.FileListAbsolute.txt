@@ -1,0 +1,12 @@
+D:\FACULTATE-AN3-SEM2\PROIECT IP BUN\Parser\Parser\bin\Debug\Parser.dll
+D:\FACULTATE-AN3-SEM2\PROIECT IP BUN\Parser\Parser\bin\Debug\Parser.pdb
+D:\FACULTATE-AN3-SEM2\PROIECT IP BUN\Parser\Parser\bin\Debug\Cryptography.dll
+D:\FACULTATE-AN3-SEM2\PROIECT IP BUN\Parser\Parser\bin\Debug\Intrebari.dll
+D:\FACULTATE-AN3-SEM2\PROIECT IP BUN\Parser\Parser\bin\Debug\User.dll
+D:\FACULTATE-AN3-SEM2\PROIECT IP BUN\Parser\Parser\bin\Debug\Cryptography.pdb
+D:\FACULTATE-AN3-SEM2\PROIECT IP BUN\Parser\Parser\bin\Debug\Intrebari.pdb
+D:\FACULTATE-AN3-SEM2\PROIECT IP BUN\Parser\Parser\bin\Debug\User.pdb
+D:\FACULTATE-AN3-SEM2\PROIECT IP BUN\Parser\Parser\obj\Debug\Parser.csproj.AssemblyReference.cache
+D:\FACULTATE-AN3-SEM2\PROIECT IP BUN\Parser\Parser\obj\Debug\Parser.csproj.CoreCompileInputs.cache
+D:\FACULTATE-AN3-SEM2\PROIECT IP BUN\Parser\Parser\obj\Debug\Parser.dll
+D:\FACULTATE-AN3-SEM2\PROIECT IP BUN\Parser\Parser\obj\Debug\Parser.pdb

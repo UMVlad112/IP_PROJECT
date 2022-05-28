@@ -1,0 +1,6 @@
+D:\FACULTATE-AN3-SEM2\PROIECT IP BUN\RegisterException\RegisterException\bin\Debug\RegisterException.dll
+D:\FACULTATE-AN3-SEM2\PROIECT IP BUN\RegisterException\RegisterException\bin\Debug\RegisterException.pdb
+D:\FACULTATE-AN3-SEM2\PROIECT IP BUN\RegisterException\RegisterException\obj\Debug\RegisterException.csproj.AssemblyReference.cache
+D:\FACULTATE-AN3-SEM2\PROIECT IP BUN\RegisterException\RegisterException\obj\Debug\RegisterException.csproj.CoreCompileInputs.cache
+D:\FACULTATE-AN3-SEM2\PROIECT IP BUN\RegisterException\RegisterException\obj\Debug\RegisterException.dll
+D:\FACULTATE-AN3-SEM2\PROIECT IP BUN\RegisterException\RegisterException\obj\Debug\RegisterException.pdb

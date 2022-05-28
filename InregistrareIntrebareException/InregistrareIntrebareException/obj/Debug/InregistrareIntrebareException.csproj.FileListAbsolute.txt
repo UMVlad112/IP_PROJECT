@@ -1,0 +1,6 @@
+D:\FACULTATE-AN3-SEM2\PROIECT IP BUN\InregistrareIntrebareException\InregistrareIntrebareException\bin\Debug\InregistrareIntrebareException.dll
+D:\FACULTATE-AN3-SEM2\PROIECT IP BUN\InregistrareIntrebareException\InregistrareIntrebareException\bin\Debug\InregistrareIntrebareException.pdb
+D:\FACULTATE-AN3-SEM2\PROIECT IP BUN\InregistrareIntrebareException\InregistrareIntrebareException\obj\Debug\InregistrareIntrebareException.csproj.AssemblyReference.cache
+D:\FACULTATE-AN3-SEM2\PROIECT IP BUN\InregistrareIntrebareException\InregistrareIntrebareException\obj\Debug\InregistrareIntrebareException.csproj.CoreCompileInputs.cache
+D:\FACULTATE-AN3-SEM2\PROIECT IP BUN\InregistrareIntrebareException\InregistrareIntrebareException\obj\Debug\InregistrareIntrebareException.dll
+D:\FACULTATE-AN3-SEM2\PROIECT IP BUN\InregistrareIntrebareException\InregistrareIntrebareException\obj\Debug\InregistrareIntrebareException.pdb
